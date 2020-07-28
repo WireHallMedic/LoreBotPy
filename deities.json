@@ -1,0 +1,316 @@
+{
+"deities":"The Old Gods: Audra, Chylae, Emezes, Felja, Fetchi, Lergor, Mezal, Nox, Onusar, Reka, Sol\n\nThe Young Gods: Adaris, Alacas, Courocas, Epia, Frovan, Geos, Gericas, Iriz, Kitsan, Laex, Meral, Rarekor, Tusain, Zelia, Zyar\n\nThe Hero Gods: Alcott, Daiuz Hammerstrike, Kandala, Tranton, Tulai, Xenos\n\nRegional Gods: Ancestor Spirits, Animal Spirits, Po'mua, The Jade Emperor, The Prophet, Vorardruak\n\nDead Gods: Dracos",
+
+"audra":{
+"name":"Audra",
+"portfolio":"Art, Travelers",
+"alignment":"Neutral",
+"caste":"Old Goddess",
+"symbol":"A harp on a road",
+"description":"The Patroness, as she is known, is the goddess of artists and performers, as well as travelers.  Known as kind and protective, she is very popular among bards and nobles.  Creator of the halflings.\n - Cultivate beauty in all aspects.\n - Always seek new horizons, be it in art or travel.\n - Show kindness to the weary."
+},
+"chylae":{
+"name":"Chylae",
+"portfolio":"Nature, Plants, Wilderness",
+"alignment":"Neutral",
+"caste":"Old Goddess",
+"symbol":"An oak leaf",
+"description":"Nature or Mother Nature, Chylae is the goddess of rangers, druids, and the co-creator of the elves (with Emezes).  She protects the wilderness and her children (both the fey and plants), as well as the children of her sister Felja.\n - Protect the wild places of the world from destruction and overuse.\n - Fear not the savagery of nature; seek the harmony within it.\n - Destroy undead and aberrations at all opportunities."
+},
+"emezes":{
+"name":"Emezes",
+"portfolio":"Wisdom, Strategy",
+"alignment":"Lawful Good",
+"caste":"Old God",
+"symbol":"An open book",
+"description":"The Loremaster, the Allknowing One, Emezes is most often revered by sages and arcane spellcasters.  While his brother Iriz specializes in knowledge for knowledge's sake, Emezes focuses on the application of information.  Co-creator of the elves, with Chylae.\n - Seek self-perfection through knowledge and discipline.\n - Accumulate, preserve and distribute knowledge in all forms.\n - Tear down the works of Nox and her followers."
+},
+"felja":{
+"name":"Felja",
+"portfolio":"Animals, Hunters",
+"alignment":"Neutral",
+"caste":"Old Goddess",
+"symbol":"An arrow in front of a fang",
+"description":"The Beastmistress and the Huntress, Felja is revered by hunters, trackers, and any who depend on animals for survival.  Elves also make up a large portion of her faithful.  She is an unrelenting hunter, but angered by needless suffering.  Creator of the animals.\n - Taking the life of another is a holy act, to be undertaken only with reverence, respect, and necessity.\n - Depend only upon own skills and abilities.\n - Hunt those who kill for pleasure."
+},
+"fetchi":{
+"name":"Fetchi",
+"portfolio":"Evil, Tyranny",
+"alignment":"Neutral Evil",
+"caste":"Old Goddess",
+"symbol":"Red lightning bolt",
+"description":"The Corruptor was once the lover of Onusar, and her true feelings about him are unknown.  Together the two of them created the world; their priests generally try to avoid confrontations with each other in deference to their past, which is impossible.  Fetchi herself is moody and fickle.  Creator of demons and devils.\n - Hoard power, for it is its own reward.\n - Leave no slight unpunished and forgive no wrong.\n - The truest mark of power is the ability to inflict misery upon others."
+},
+"lergor":{
+"name":"Lergor",
+"portfolio":"Law, Duty, Rulership",
+"alignment":"Lawful Neutral",
+"caste":"Old God",
+"symbol":"Open eye on a hammer",
+"description":"The Guardian is stern, noble, and reliable, qualities which endear him to dwarves immensely.  The creator of the dwarves, he is also the father of Frovan and Meral.\n - Swear no oath you cannot uphold, and uphold each oath you swear.\n - Be stoic and tenacious in the face of adversity.\n - Pursue and punish oath-breakers, liars, and traitors; particularly the minions of Tulai."
+},
+"meral":{
+"name":"Mezal",
+"portfolio":"Chaos, The Elements, Weather",
+"alignment":"Chaotic Neutral",
+"caste":"Old God",
+"symbol":"Storm cloud over a fissure",
+"description":"Mezal the Capricious is the lord and master of the elements.  He is an uncaring god who will smite his followers and his enemies with equal force.  Mezal is mostly worshiped out of fear.  Creator of the elementals.\n - Mezal cares not for his followers; as such, he has no tenants."
+},
+"nox":{
+"name":"Nox",
+"portfolio":"Darkness, Secrets",
+"alignment":"Chaotic Evil",
+"caste":"Old Goddess",
+"symbol":"A crescent",
+"description":"Nox the Nightmistress rules the darkness.  When the elven race was cursed by Dracos, she claimed those who were driven underground and altered them into the race that they are today.  Those with business not to be done under the watchful eye of Sol often find themselves aligned with Nox.  The daggers kept by her clergy are generally poisoned.  Creator of the orcs, goblins, and gnolls.\n - Cloak yourself with shadows; they are the sacred places of the Nightmistress and shall protect you.\n - Never reveal all you know.\n - Nurture the darkness in your heart; exploit it in the hearts of others."
+},
+"onusar":{
+"name":"Onusar",
+"portfolio":"Good",
+"alignment":"Neutral Good",
+"caste":"Old God",
+"symbol":"Two wavy lines in front of a triangle",
+"description":"The Pure One, Onusar is the once-lover of Fetchi.  Together the two of them created the world, and it is rumored that he still has a soft spot for her, despite their differences.  Aloof and stern, he is the father or grandfather of all the other gods, save Fetchi.  Creator of the angels and celestials. \n - Uphold the highest ideals of honor and righteousness.\n - Be constantly vigilant against evil, and oppose it wherever it is found.\n - Perpetrate no evil, neither by action nor inaction."
+},
+"reka":{
+"name":"Reka",
+"portfolio":"Fate",
+"alignment":"Lawful Neutral",
+"caste":"Old Goddess",
+"symbol":"A roll of thread on a stick",
+"description":"While her daughter Zelia is the goddess of luck, the Weaver is the goddess of inescapable destiny.  Her priests are somber, taking a larger view of even the most trivial events.  Creator of the humans.\n - Strive to see the Grand Tapestry in all things.\n - Aid those touched by Reka to find their destiny.\n - Oppose the followers of Mezal and Adaris, who's actions disrupt the Grand Tapestry."
+},
+"sol":{
+"name":"Sol",
+"portfolio":"Light, generosity",
+"alignment":"Neutral Good",
+"caste":"Old God",
+"symbol":"A sunrise",
+"description":"Sol, the Morninglord and the Giver, is the master of the sun and all light.  Commonly worshipped, he benevolently bestow his gifts upon all he sees.  His priests are expected to emulate this generosity, and frequently act as advocates and philanthropists in the communities in which they live.  Creator of the giants.\n - Build communities and fellowships, so that each may rely on his neighbor.\n - Share freely with those in need.\n - Oppose Nox and Tulai, as their lies destroy brotherhood."
+},
+"adaris":{
+"name":"Adaris",
+"portfolio":"Rage, Aggression, Destruction",
+"alignment":"Chaotic Evil",
+"caste":"Young God",
+"symbol":"A red starburst",
+"description":"The child of Felja and Courocas, Adaris is by far the youngest of the true gods, having been born in the middle of the fifty-second age.  Adaris revels in all forms of  destruction, and exhorts his followers to do the same.\n - Revel in destruction, chaos, and your own emotions.\n - Teach those who would build and scheme the futility of their actions.\n - Their is neither past nor future; there is only now."
+},
+"alacas":{
+"name":"Alacas",
+"portfolio":"Death (Disease), Plague, Decay",
+"alignment":"Neutral Evil",
+"caste":"Young God",
+"symbol":"A green disk",
+"description":"The Sickly One, Alacas is the bringer of plagues and poxes.  He is most often prayed to out of fear or desperation.  Brother to Coruocas and Gericas.\n - Decay is in all things; find it and nurture it.\n - Spread the blessings of Alacas, that he may outdo his brothers.\n - Be patient in your tasks; Alacas rewards those who are thorough."
+},
+"courocas":{
+"name":"Courocas",
+"portfolio":"Death (Violence), Murder, Battle",
+"alignment":"Chaotic Evil",
+"caste":"Young God",
+"symbol":"Skull bleeding from eyes, nose, and mouth",
+"description":"The Raging One, Courocas can be found sweeping up warriors fallen in battle and murdered in back alleys.  Sometimes called the Murderer's God, his interest in mortals begins where Geos and Zyar's ends.\n - Kill in the name of Courocas, that he may outdo his brothers.\n - Incite the foolish servants of Geos and Zyar to war.\n - Treat the servants of Adaris as brothers."
+},
+"epia":{
+"name":"Epia",
+"portfolio":"Love",
+"alignment":"Chaotic Good",
+"caste":"Young Goddess",
+"symbol":"Two interlocking rings",
+"description":"The Soulbinder, the Matchmistress is always popular among younger generations.  Her priests frequently help young couples, eloping them in secret and the like.  Often, her priests act as matchmakers of the community.   Other common duties of her priests include those of midwives, doctors, and other healers.\n - Love all things.\n - Love is both a means and an end; aid it wherever possible.\n - Be as love; selfless, kind, soothing and relentless."
+},
+"frovan":{
+"name":"Frovan",
+"portfolio":"Justice",
+"alignment":"Lawful Neutral",
+"caste":"Young God",
+"symbol":"A golden balance",
+"description":"The Balanced One is one of the most widely accepted gods, with a large following, especially among dwarves.  Frovan has a surprisingly good relationship with his brother Meral, and their followers generally extend tolerance and acceptance towards each other.  A stern but practical god, Frovan often travels to the Plane of Judgment (Purgatory) to ensure that the dead are judged fairly.\n - Repay good with good, and evil with righteous retribution.\n - Obey the law and respect traditions.\n - Treat the followers of Mezal as favored cousins."
+},
+"geos":{
+"name":"Geos",
+"portfolio":"War, Valor",
+"alignment":"Chaotic Good",
+"caste":"Young God",
+"symbol":"Silver gauntleted fist",
+"description":"The Valorous One, the Knight, the Soldier, Geos is one of the most popular deities with a huge following of warriors of all types.  Constantly warring with his brother Zyar, Geos embodies the virtues of honor, courage and valor.  He is a boisterous and good-natured god.\n - Embody the qualities of loyalty, honor, truth, and strength.\n - Be fearless and relentless in the persecution of the wicked.\n - Combat the minions of Zyar at all opportunities."
+},
+"gericas":{
+"name":"Gericas",
+"portfolio":"Death (Age), Time",
+"alignment":"Lawful Netural",
+"caste":"Young God",
+"symbol":"An hourglass",
+"description":"The Ancient One, Gericas collects the souls of those who die from old age.  Prayers to him are commonly pleas to be taken away either now (by the suffering), or eventually.  Brother to Courocas and Alacas, he is utterly emotionless.\n - Do not fear death, for death is the natural state which follows life.\n - Give comfort to the bereaved.\n - Destroy undead and those who create them."
+},
+"iriz":{
+"name":"Iriz",
+"portfolio":"Magic",
+"alignment":"Neutral Good",
+"caste":"Young God",
+"symbol":"A hand with a glowing index finger extended",
+"description":"Iriz the Trickster, Iriz the Mage, Iriz is the patron god of spellcasters.  He also has a bit of a reputation as a prankster and riddler, making him quite popular with gnomes and halflings.  The prank which gave him the most glee was the creation of the gnomish race, which he accomplished by altering a clan of dwarves.  Lergor still has yet to see the humor of it.\n - Encourage innovation and new thoughts, wherever they may lead.\n - Collect and preserve knowledge.\n - Find and spread joy and humor wherever you can."
+},
+"kitsan":{
+"name":"Kitsan",
+"portfolio":"Life, Agriculture",
+"alignment":"Neutral Good",
+"caste":"Young Goddess",
+"symbol":"A sprouting plant",
+"description":"The Earthmother is another of the more widely revered deities, primarily with farmers.  She is gentle, though occasionally uncaring.  A simple god, she encourages her followers to emulate her peaceful nature.\n - Preserve the cycle of growth and harvest.\n - Live on and with the land.\n - Be generous in sharing the land's bounty."
+},
+"laex":{
+"name":"Laex",
+"portfolio":"Martyrs, Suffering",
+"alignment":"Lawful Good",
+"caste":"Young God",
+"symbol":"Mask crying a drop of blood",
+"description":"Laex the Bleeding, the Crying One; his name is cried out by those in pain and torment.  Laex's tenets call for the taking up of the burdens of others, and he spends most of his time in the lower planes, helping the damned.  He is a sad, but kind god.\n - Shoulder the burdens of others.\n - Show compassion and mercy to all.\n - Do not flinch in the face of danger."
+},
+"meral":{
+"name":"Meral",
+"portfolio":"Vengance",
+"alignment":"Lawful Evil",
+"caste":"Young God",
+"symbol":"A black 'X'",
+"description":"The Patient One, Meral and his followers seek to avenge slights, regardless of nature.  He is the brother of Frovan, and they enjoy a close friendship.  Utterly unforgiving, Meral represents the dark side of Frovan's justice, and the corruption of his father Lergor’s rulership.  His symbol is a black 'X', which is often carved into his priest's victims.\n - Never forget a slight or loss, for those who have hurt you must suffer in kind.\n - The ends justify the means.\n - Treat the followers of Frovan as favored cousins."
+},
+"rarekor":{
+"name":"Rarekor",
+"portfolio":"Revelry, Festivals",
+"alignment":"Chaotic Neutral",
+"caste":"Young God",
+"symbol":"A foaming mug",
+"description":"Wherever people are having fun in a group, wherever there are games of chance, the Reveler is there.  Often worshipped by bards, Rarekor holds dominion over all entertainers and festive gatherings.\n - Life is to be enjoyed, not merely completed.\n - Let not your revelry intrude on the joy of others.\n - Take loss and pain in stride, for without them their is neither gain nor joy."
+},
+"tusain":{
+"name":"Tusain",
+"portfolio":"Competition, Strength",
+"alignment":"Lawful Neutral",
+"caste":"Young God",
+"symbol":"Pair of dice",
+"description":"Often found with his brother Rarekor, the Challenger is he who watches over all forms of competition, including the more physical side.  His priests are usually quite athletic, and enjoy a good game of chance; they are of course very competitive.\n - Only through adversity do we grow stronger.\n - Never turn away from a challenge.\n - Obey the laws, and respect authority."
+},
+"zelia":{
+"name":"Zelia",
+"portfolio":"Luck",
+"alignment":"Chaotic Neutral",
+"caste":"Young Goddess",
+"symbol":"A coin with a woman's face",
+"description":"Zelia the Luckmaiden or Lady Luck appeals to gamblers, bards, and travelers.  She and her followers are known as easy-going, taking life as it comes, and appreciating both good and bad fortune.\n - Take pleasure in the tides of fortune, both the ebbs and flows.\n - Act with swiftness and conviction; trust to the Luckmaiden to care for the rest.\n - Seek not to oppose the chaos of life, but to harness it."
+},
+"zyar":{
+"name":"Zyar",
+"portfolio":"War, Bloodshed",
+"alignment":"Chaotic Evil",
+"caste":"Young God",
+"symbol":"A spiked, gauntleted fist",
+"description":"The brother and immortal enemy of Geos, the Slaughterer is to be found on the front lines of combat, leading the charges of the base and bloodthirsty.  While Geos embodies the glory of valorous combat, Zyar represents the joy of killing.\n - Raid.  Kill.  Conquer.\n - Raise up your host to seize that which you desire.\n - Ownership is the right of the strong."
+},
+"alcott":{
+"name":"Alcott",
+"portfolio":"Luxury, Comfort",
+"alignment":"Neutral Good",
+"caste":"Hero God",
+"symbol":"A purple pillow",
+"description":"One of the youngest of the gods, the Resting God is an ascended hero.  Once a halfling adventurer, he and his party used the awesome powers of the Seven Swords to become a god.  The fates of all but one of his fellow adventurers are unknown.  Alcott is very popular with the rich, and the would-be rich, and his priests often are asked to bless homes.\n - Seek comfort, luxury and wealth.\n - A happy life is the reward for opportunity and cleverness.\n - Approach all challenges with preparation and forethought."
+},
+"daiuz hammerstrike":{
+"name":"Daiuz Hammerstrike",
+"portfolio":"Craft, Labor",
+"alignment":"Lawful Good",
+"caste":"Hero God",
+"symbol":"An anvil",
+"description":"The Craftsman is an ascended hero from long ago, and is proud and practical.  Daiuz Hammerstrike is the patron god of blacksmiths, carpenters, masons, and anyone who labors at their craft.  Once a blacksmith of world renown, his craftsmanship eventually attracted the attention of the gods.  Audra sought to humble the master crafter, and challenged him to a competition; each would craft three items, and the other gods would judge which were the best.  The voting was close, but Daiuz was deemed the superior craftsman; his elevation to godhood was his reward.\n - Seek out the riches of the world and forge them into great works of art.\n - Happiness lies in the act of creation.\n - Oppose those who would destroy the works of others."
+},
+"kandala":{
+"name":"Kandala",
+"portfolio":"Madness, Insanity",
+"alignment":"Chaotic Neutral",
+"caste":"Hero Goddess",
+"symbol":"A woman's face, screaming",
+"description":"An ascended hero, Kandala was a human warrior and sorceress in life who fell deeply in love with an elf.  Determined to become immortal so that she could be with him all his long life, her heart and mind were shattered when he was slain by marauding drow and his soul sacrificed to Nox.  She spent the next twenty years below the surface, obliterating every living thing she came across.  Her vengeance accomplished but her sanity still lost, she continued her pursuit of immortality, eventually becoming so powerful she challenged Meral to a fight and bested him.  Though she became a goddess, Meral's revenge was brutal; the he cursed her to relive the moment of her beloved's demise every night.  Few mortals worship Kandala; those that do are often cultists looking to spread her insanity.  Prayers to her are common enough, however; people pray to her to release their loved ones from madness.\n - Spread chaos, destruction, and insanity throughout the world.\n - The world is mad, and seeks your ruin.\n - Slaughter, corrupt and destroy all who stand in your way."
+},
+"tranton":{
+"name":"Tranton",
+"portfolio":"Undeath",
+"alignment":"Lawful Evil",
+"caste":"Hero God",
+"symbol":"A skeletal hand",
+"description":"Once mortal, the Lord of Undeath ruled the region of Vesgalth.  Eventually he amassed enough power to become the god of the undead, worshiped by vampires, liches, ghouls, and other free-willed undead, as well as necromancers.  He still schemes to control all of Molidius.\n - Hold allegiance to none but the Lord of Undeath.\n - Raise armies of the undead and conquer in Tranton's name.\n - Destroy the followers of Sol."
+},
+"tulai":{
+"name":"Tulai",
+"portfolio":"Thievery, Lies",
+"alignment":"Chaotic Evil",
+"caste":"Hero God",
+"symbol":"A black ribbon",
+"description":"An ascended dark elf, the Great Thief or the Filcher is the goddess of thievery, lies, and deception.  Burglars, con-men and muggers all pray to Tulai.  She ascended to godhood after claiming the Ribbon of Felthisan, which the Nox had placed at the bottom of a massive and deadly dungeon to test mortals.\n - Take what you wish; possession is ownership.\n - Spare no pity for the weak; be merciless.\n - Trust is a weakness; exploit that weakness."
+},
+"xenos":{
+"name":"Xenos",
+"portfolio":"Ambition, Achievement",
+"alignment":"Neutral",
+"caste":"Hero God",
+"symbol":"A silver ring in a red burst",
+"description":"The Prince of Ambition is recently ascended to godhood (32, 52a), taking the place of the god Zhardan, who had been imprisoned in a ring for thousands of years.  Xenos frequently joins Geos and Frovan on their crusades, and takes great joy in calling down waves of destruction upon the minions of evil.  He also gets along well with Alcott, his former patron.\n - Seek power, achievement, and knowledge.\n - Ally with others who share your goals.\n - Utterly crush those who oppose you."
+},
+"ancestor spirits":{
+"name":"Ancestor Spirits",
+"portfolio":"Pantheon",
+"alignment":"Varies",
+"caste":"Regional Deities",
+"symbol":"Varies",
+"description":"Several cultures throughout Molidius worship the spirits of their ancestors, usually (but not always) in addition to the gods.  Often, the belief is that the ancestors of the tribe, clan, village, etc., will take more interest in the needs of their followers. "
+},
+"animal spirits":{
+"name":"Animal Spirits",
+"portfolio":"Pantheon",
+"alignment":"Varies",
+"caste":"Regional Deities",
+"symbol":"Varies",
+"description":"Many cultures spread throughout the world worship ideals embodied by the animals around them; sometimes these are aspects of Felja, and sometimes these are not.  Many savage cultures actively try to emulate the animal spirits they worship."
+},
+"po'mua":{
+"name":"Po'mua",
+"portfolio":"Nature, Creation, the Planet (Ghalak)",
+"alignment":"Neutral Good",
+"caste":"Regional Goddess",
+"symbol":"Five concentric circles",
+"description":"Worshipped by the peoples of Western Ghalak, the Earthmother is an amalgam of Felja, Chylae, and Kitsan.  The Great Mother is not merely the patron of Ghalak, she physically is that continent."
+},
+"the jade emperor":{
+"name":"The Jade Emperor",
+"portfolio":"Doriala",
+"alignment":"Lawful Neutral",
+"caste":"Regional God",
+"symbol":"A jade eagle",
+"description":"The Jade Emperor is worshiped throughout Doriala; in fact his worship is required to be included in any religious ceremony (albeit to a lesser extent than the 'Great Gods').  While not truly divine, his worshipper's faith in him grants them the ability to cast spells and work miracles in his name."
+},
+"the prophet":{
+"name":"The Prophet",
+"portfolio":"Law, Justice, Pacifism (Al-Badia)",
+"alignment":"Lawful Neutral",
+"caste":"Regional God",
+"symbol":"None",
+"description":"When he was born in the 34th age, the land that is now Al-Badia was a collection of ruthless bandits and cutthroats who believed in no gods.  The Prophet spent his life spreading the message of pacifism and law; his oratory forged the Dordunii into what they are today.  The Prophet's name has been lost to time, but he is revered as an ascended hero."
+},
+"vorardruak":{
+"name":"Vorardruak",
+"portfolio":"Hunger",
+"alignment":"Chaotic Evil",
+"caste":"Regional Deity",
+"symbol":"A tooth-filled maw",
+"description":"When Lergor placed the first dwarves on Molidius, he placed them in Arkarsa to help them become strong and tough.  Once they had adapted to their environment, he sent a foe captured during the Divine War; Vorardruak, the Great Wyrm of Hunger, an engine of destruction.  Generations of dwarves warred with him, before Daiuz Hammerstrike crafted a cunning trap, sealing him in the ice deep below the icefields.  The Hunger in the Deep exists in a semi-conscious state, sealed in his frozen prison."
+},
+"dracos":{
+"name":"Dracos",
+"portfolio":"Dragons",
+"alignment":"Chaotic Evil",
+"caste":"Dead God",
+"symbol":"A dragon silhouette",
+"description":"The first of the gods, and father of the Old Gods, Dracos was cast down by them. His dying curse blights the children of the Old Gods with mortality to this day."
+}
+}

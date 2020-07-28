@@ -1,0 +1,144 @@
+{
+"geography":"The World: Molidius\nContinents: Arkarsa, Erathal-Shar, Ghalak, Thelian\nRegions: Al-Badia, Asdoli Mountains, Athinar, The Chang River, Chill Peak, The Deeprealms, Doriala, Dragonjaw Mountains, Ecoll Highlands, Forestlands, Great Ravine, Hundred Kingdoms, Ibori Coast, Ireby, Jalanis River, Lakehills, Molidius, Poa Steppes, Salino Marshes, Sentinel Peaks, Silt Sea, Underhighway, Valis, Vesgalth",
+
+"thelian":{
+"name":"Thelian",
+"language":"Various",
+"description":"Thelian is one of the major continents of Molidius, by far the most densely populated. It is broadly divided into the Hundred Kingdoms, Vesgalth, Doriala, Al Badia, the Poa Steppes, the Ecoll Highlands, the Sentinel Peaks, Ireby, and the Asdoli Mountains."
+},
+"hundred kingdoms":{
+"name":"The Hundred Kingdoms",
+"language":"Centennian",
+"description":"Bordered by the Sea of Storms to the west, and mountains on all other sides with the Glass Sea and Temperate Ocean in the northeast and southeast, this region of Thelian is composed of about several dozen small kingdoms and countless petty empires. For much of recorded history, it was a chaotic land, littered with small nations perpetually at war with each other. The moniker 'The Hundred Kingdoms' was used for convenience, as nations appeared and disappeared frequently. The Hundred Kingdoms are very diverse, an while less politically volatile following Brk'ka's Invasion, it would be naive to call it stable."
+},
+"great ravine":{
+"name":"The Great Ravine",
+"language":"Dwarven",
+"description":"The Great Ravine is a vast, natural gorge carved by the Jalanis River as it winds its way south from the Glass Sea.  Largely populated by dwarves, gnomes, and halflings, the Great Ravine is known to hold many entrances to the Deeprealms, which must be constantly monitored.  Additionally, several settlements surround the ravine, forming a support network for the guards and craftsmen of the area. The reigning monarch of Kar-Ulgar is recognized as the highest authority in the region, as the dwarven forces which patrol the area are the only organized defense available. The dwarves don't mind the burden of defending the nearby communities, as they in turn depend on the surface dwellers for trade."
+},
+"dragonjaw mountains":{
+"name":"The Dragonjaw Mountains",
+"language":"Centennian",
+"description":"A great range of jagged peaks which splits the sky, the Dragonjaw Mountains run along the coast of the Glass Sea, continuing down into the Hundred Kingdoms. They isolate the Ibori Coast, and while not as impassable as the Asdoli Mountains, are home to many dangerous creatures. A few, isolated communities dot the imposing peaks of the Dragonjaw Mountains. Those hardy places of civilization which can persevere here must constantly be vigilant against ogres, giants, and gargoyles, and tend to have sturdy watchtowers at their edges. Many of the giants from Brk'ka's Invasion fled here at the war's conclusion, forming their own communities. Roving bands of hill giants are a constant threat."
+},
+"chill peak":{
+"name":"Chill Peak",
+"language":"Centennian",
+"description":"A single, huge mountain that shoots up two miles above the surrounding desert, Chill Peak was the headquarters for the resistance to, and counterattack on, Brk'Ka's Invasion. With the predominantly cloud giant community of Highhold perched upon it, Chill Peak is tall enough to rise above the anti-magic field that binds Athinar. In the aftermath of the Invasion, Highhold has become home to many powerful heroes, many of whom can be occasionally persuaded to take up arms again, if the cause is right."
+},
+"athinar":{
+"name":"Athinar",
+"language":"Centennian",
+"description":"  The blighted region known as Athinar lies in the center of the Hundred Kingdoms, a perfectly square desert one hundred miles per side. At each corner, a massive black iron tower rises above the surrounding lands, clearly marking the border.\n  Until quite recently, Athinar was a perfectly ordinary part of the Hundred Kingdoms, as verdant as any other, but was forever changed by Brk'ka's Invasion. To fuel his arcane ambitions, all the metal was stripped from the region to create the towers, and fell sorcereries block the use of magic within their perimeter. Even the gods are blinded to what transpires in Athinar, and by some dire invocation nearly all vegetation withered and died within the year.\n  Few people have chosen to remain in Athinar; those that do almost without exception have reason to fear magic, or even the gods themselves."
+},
+"forestlands":{
+"name":"The Forestlands",
+"language":"Centennian",
+"description":"  Running the length of the Sentinel Peaks all the way to the Sea of Storms, the Forestlands form the southernmost portion of the Hundred Kingdoms. The Forestlands are characterized by their dense, dangerous woods, criss-crossed by lonely roads linking settlements. Forestlanders tend to have an independent streak, and what nations can be found here tend to be much smaller than those further north. Most of the beastmen stranded by Brk'ka's defeat took up residence here, and while they face significant prejudice, some tribes have managed to become accepted by more civilized races.\n  Of particular note is the area near the ruins of Dravan Nithe, the ancient elven capital. Now demon-infested wreckage, Dravan Nithe is avoided by most sane people, though rumors of ancient treasures from the time of the Great War still draw foolhardy adventurers."
+},
+"valis":{
+"name":"Valis",
+"language":"Centennian",
+"description":"The city-state of Valis is the longest continuous nation in the Hundred Kingdoms. A stable republic on a peninsula protruding into the Sea of Storms, Valis has been able to resist the armies of its neighbors and has maintained a continuous government for three hundred years. It is a travel hub for adventurers, and the government actively works to encourage this; being the home base for so many professional sell-swords is key to maintaining its independence."
+},
+"lakehills":{
+"name":"The Lakehills",
+"language":"Centennian",
+"description":"  A picturesque land of rolling hills and sparkling waters, the Lakehills lie to the south of the Great Ravine, fed by an abundance of springs which form tributaries to the Jalanis River. The population has a disproportionate number of halflings and gnomes, who use the winding waterways as avenues for trade. The difficulty of marching an army through this region, as well as a disinterest in goings on in neighboring regions, has limited its appeal to would-be conquerors.\n  In particular, the Lakehills are noted for their vineyards, musicians, and shipwrights."
+},
+"sentinel peaks":{
+"name":"Sentinel Peaks",
+"language":"Centennian, Vesgi",
+"description":"  Running from the Sea of Storms to the Temperate Ocean, the Sentinel Peaks derive their name from their role in separating the rest of the continent from the lands to their south; the cursed realm of Vesgalth.\n  Even before Tranton's ascension, the Sentinel Peaks were dotted with monasteries, temples, and forts to keep his minions at bay. Only the harsh terrain and constant vigilance keep the undead scourge within their own borders, and every citizen of the Sentinel Peaks is expected to be willing to give their life to keep it that way. There were few settlements here before the coming of Tranton, and now nearly all such places are the home of orders of paladins, militant clerics, and monks."
+},
+"jalanis river":{
+"name":"The Jalanis River",
+"language":"Centennian",
+"description":"  Winding from Lake Jalanis near the northern end of the Hundred Kingdoms to its distribution in the Salino Marshes, the mighty Jalanis River is the main waterway through the Hundred Kingdoms. Wide and deep in most places, it is a vital artery for trade and transport."
+},
+"salino marshes":{
+"name":"The Salino Marshes",
+"language":"Centennian",
+"description":"Lying just north of the Forestlands along the coast of the Sea of Storms, the Salino Marshes are a vast network of brackish fens and swamps. With few settlements, its semi-aquatic nature makes it inhospitable for most races, though the triton city of Corilya dwells here, a remnant from when the tritons were allies of the Empire of Voltrey. Bands of trolls, bullywugs, and lizardfolk are a constant threat to travelers in the region, to say nothing of the terrors of the deep who occasionally find their way in from the ocean."
+},
+"doriala":{
+"name":"Doriala",
+"language":"Dorialan",
+"description":"  The largest single region in Thelian, Doriala's borders extend for many thousands of miles, along the coast of the Quenching Sea to the east, the Daggerstone Mountains which separate it from Ireby to the north, before meeting the Sea of Glass to the northwest and finally the Asdoli Mountains to the west and south.\n  Doriala is (in)famous as the most rigidly controlled society of Thelian; an iron-clad caste system, incredibly complex bureaucracy, and utter intolerance of lawbreakers typify Dorialan policy.  Weapons are outlawed except for members of the noble and military castes, and magic is strictly forbidden to all but clergy and nobility.  Rebels are dealt with swiftly and mercilessly.  To defend themselves, the underground radicals have become proficient with improvised weapons such as the staff, nunchaku and sai, as well as developing martial arts in secret.  Indeed, most of the martial arts temples and academies of the world began behind closed doors in Doriala.\n  The majority of the populace of Doriala are farmers, herdsmen, and simple craftsmen.  Meeting a heavy tax burden limits their free time, and most entertainers and artists have precious little time to devote to their crafts.  The nobility, however, lives in luxury; every noble is expected to master some art form.\n  Doriala is ruled by the Jade Emperor, a hereditary title which has continued in an unbroken line for eighteen generations; the position has been held by one line of nobility or another for twelve ages.  The Jade Emperor is both sovereign ruler and high priest; he is considered the representative of the gods and their most favored mortal."
+},
+"poa steppes":{
+"name":"Poa Steppes",
+"language":"Dorialan",
+"description":"  The great grassy planes to the north of Doriala are home to the greatest horsepeople of Molidius; the fiercely territorial Hung of the Poa Steppes. Despite the hunger for conquest of their southern neighbors, the Hung have maintained their independent ways as pastoral nomads. The disparate tribes have united under a single Warlord whenever needed; evading conventional armies and performing guerrilla raids on supply lines, presenting no enemy for their aggressors to attack.\n  As for the Hung themselves, they are a simple people, with a rich oral tradition. They herd grazing animals, and forage for plants, while supplementing their diet by hunting and fishing. Domestic skills are highly valued, and even the fiercest warrior is expected to be an expert at weaving, cooking, sewing, or some other similar skill."
+},
+"chang river":{
+"name":"The Chang River",
+"language":"Dorialan",
+"description":"Fed by the Jade Sea, the Chang River winds through the provinces of Doriala, replenishing their soil in the annual monsoon. It is said that human life began in the Chang River Valley, which is among the most fertile in the world, and which still produces crops distributed the length and breadth of Doriala. An extremely active waterway, uncountable boats sail its waters, and there are even entire nomadic communities of houseboats that live their whole lives calling the Chang River home, herding waterfowl and fishing."
+},
+"asdoli mountains":{
+"name":"The Asdoli Mountans",
+"language":"Dorialan",
+"description":"  A mighty range of mountains splits the continent of Thelian in half before turning east; indeed these are the greatest mountains in the world. They separate the regions of the Ecoll Highlands to the west from the great deserts of Al-Badia in the southeast, and Doraila in the northeast. Many generations ago a group of monks, fleeing persecution in Doriala, took refuge in the great peaks of Asdoli, correctly believing themselves safe in the steep impasses. Now, a society exists in the crests of the world; massive monasteries carved from the rock, great libraries and mighty halls. The monks pass their days in pursuit of self-perfection, in study, in exercise, and farming on terraces created for that purpose.\n  The mountains themselves are incredibly inhospitable to both travelers and those who dwell in them; steep, craggy and rocky, with violent weather, there are no known passes capable of letting anything larger than a wheelbarrow through most of the region, much less a wagon. With a knowledgeable guide, it is possible (though difficult in the extreme, and highly dangerous) to get a horse through. Mules, however, are a relatively common sight in the few passes and trails that do exist (though the monks do not use animals for labor)."
+},
+"underhighway":{
+"name":"The Underhighway",
+"language":"Dwarven",
+"description":"While the Asdoli Mountains are largely impassable for larger wagons, there is one way; the Underhighway. A great underground passage which connects the Ecoll Highlands and the Hundred Kingdoms, Al-Badia, and Doriala, the Underhighway is one of the great marvels of the great Dwarven Empire of ages past. Beautiful intricate statues mark its length, and some of the oldest communities of dwarves still exist to aid travelers. While the Underhighway is a safe and serene way to cross below the Asdoli Mountains, it is not a cheap one; the dwarves maintain a stiff toll for its use. However, for merchants with the means, the cost is well worth it."
+},
+"al-badia":{
+"name":"Al-Badia",
+"language":"Badis",
+"description":"  The great deserts of Al-Badia fill the central southeastern part of Thelian, and are home to the Al-Badian people. Divided into two distinct groups, the people of Al-Badia are characterized by their shrewd business dealings, adherence to etiquette, and quality craftsmen.\n  The first group call themselves Dorduni, or 'enlightened ones', and dwell in great cities built around the few large oases, along the coast, and around the Silt Sea, the one inland body of water in the region. The laws of the Dorduni are notoriously strict, with a rigid caste system and complex government. The Grand High Caliph (king) rules over the caliphs (lords), who rule over the pashas (hereditary mayors), who rule over the individual cities. Larger cities may have several districts, each controlled by a separate pasha.\n  The other group are called the Badii, or 'desert people.' They live in nomadic tribes, of various morality, and are renowned for their horsemanship and powerful elemental sorcerers. The Badii exist by moving from oasis to oasis, and many raid the merchant caravans which move through the deserts. They exist in a constant state of unease with the Dorduni, who view them as filthy violent savages. A Badii's tribe and rank within that tribe can be easily determined by their facial tattoos; each tribe uses its own unique tattoos to mark its members. These markings are made more elaborate as a member grows in stature.\n  The land of Al-Badia is predominantly desert; some rocky, sandy or baked earth. A number of oases of varying size dot the landscape, and two mountain ranges pierce the region. The Silt Sea, a sandy, salty ocean lies in the south-western area of Al-Badia."
+},
+"silt sea":{
+"name":"The Silt Sea",
+"language":"Badis",
+"description":"The Silt Sea is a great opaque, brownish-yellow body of water inside Al-Badia. Due to extremely high amounts of salt, few aquatic creatures live in its waters. However, it is a major path for many trade routes, and sailors ply its low waves in flat-bottomed boats, in deference to its many shallows. A large amount of the surrounding regions' water comes from the Silt Sea, purified by distillery and sent out in caravan."
+},
+"vesgalth":{
+"name":"Vesgalth",
+"language":"Vesgi",
+"description":"  A blighted and cursed realm, Vesgalth is avoided by all sane travelers if at all possible. Its people live in a perpetual state of abject terror, and all strangers are greeted with open hostility distrust. Once a beautiful and prosperous realm, it has been forever corrupted by the touch of the ascended god Tranton.\n  While mortal, Tranton lived in the land of Vesgalth; during his life and unlife, he gradually eroded the kingdom by through fear and murder. Using powerful magics, he infiltrated the nobility by slaying its members and returning them as vampires under his control. His unlife as a lich allowed him the patience to infiltrate all aspects of government, commerce, and the military over the course of several generations. Soon, he raised a mighty army of the dead and swiftly conquered all that lay before him. The population was forced into miserable living conditions, and made to worship him as a god. It was not long before he actually became one.\n  The people of Vesgalth still live under the oppression of their undead masters, and are still forced to worship Tranton. The only exceptions to this are the roving bands of gypsies, who act outside the control of anyone and seem to be a part of the realm, rather than mere inhabitants.\n  Vesgalth is distinguished by its perpetual cloud cover; it is not an exaggeration to say that the sun does not shine on this accursed place. Deep misty forests, rolling hills and dark, swift rivers characterize the region's topography. It is situated an a peninsula south of the Hundred Kingdoms, below the Grey Mountains."
+},
+"ireby":{
+"name":"Ireby",
+"language":"Draconic",
+"description":"Following the Great War, a new civilization rose to dominance; the Empire of Voltrey. Ireby is the last remnant of this fallen empire. A relatively small area to the north of the Daggerstone Mountains, which form its border with Doriala, Ireby is unique in that its government is a mageocracy. Most of the residents of the realm have at least some magical ability, and the Council of Archmages, a body of seventeen advisors, are selected from the most senior wizards in Ireby. It is ruled by the Grand High Archmage, generally acknowledged to be the greatest mage in the world. Its capital, the Enchanted City, is unusual as well; a great bundle of towers, streets and buildings enchanted to float a few feet above the ground.  The entire Enchanted City follows a circuit around the empire of Ireby."
+},
+"ibori coast":{
+"name":"The Ibori Coast",
+"language":"Ecollian",
+"description":"Separated from the Hundred Kingdoms by the Dragonjaw Mountians, the north western coast of Thelian is called the Ibori Coast, and is the province of the northmen. Unparalleled sailors and warlike in nature, the northmen launch frequent raids against the nearby seasides, particularly the Hundred Kingdoms and Doriala. The Sea of Glass dips deeply into the lands of the these two realms, making them readily accessible. The Ibori Coast is criss-crossed with many rivers, lakes and fjords; it is said that a northman can swim before he can walk. The Iborians, however, have no written language; their skalds are renowned the world over for their storytelling abilities."
+},
+"ecoll highlands":{
+"name":"The Ecoll Highlands",
+"language":"Ecollian",
+"description":"  The area separating the fractious Hundred Kingdoms to the west and the impenetrable Asdoli Mountians to the east is a rugged, hilly region known as the Ecoll Highlands. Farming is difficult in this region, as the soil is rocky and low in nutrients; most of the highlanders survive by herding. A tough, hardy people, the highlanders are suspicious of outsiders and insular by nature. Once a colony of dwarves and humans, most of the dwarves left long ago when they failed to find the ores they sought; however, their mark is still evident on the humans who stayed behind. Tough, resilient, and often stern, the highlanders could easily be mistaken for dwarves in temperament were it not for their senses of humor (somewhat akin to their forefathers, the northmen). The highlands are usually wet; constant rains fill the many lakes and streams. Misty and marshy, with a few forests.\n  The Highlands are bordered on the southern end by the Temperate Ocean, and on the northern end by the Sea of Glass, making them occasional targets of the Ibori."
+},
+"arkarsa":{
+"name":"Arkarsa",
+"language":"None",
+"description":"A bitterly cold and snowbound land, the continent of Arkarsa lies at the South Pole of Molidius. Few creatures live here, and there are no settlements. Vast snowfields lie over treacherous icy caverns, and monolithic glaciers pierce the sky. It is here that Daiuz Hammerstrike bound Vorardruak, the Hunger in the Dark, for which he was elevated to godhood."
+},
+"ghalak":{
+"name":"Ghalak",
+"language":"Ghalakar",
+"description":"Several thousand miles west of Thelian is the great continent of Ghalak. Tremendously unstable, Ghalak is wracked by near-constant earthquakes and volcanic tremors. The only permanent settlement is Fort Semptris, woven from the living trees, and serving as a trade hub with Thelian. Ghalak is home to dinosaur-filled jungles, savannahs hunted by primitive tribesmen, and lush rainforests hiding ancient bands of humanoids."
+},
+"erathal-shar":{
+"name":"Erathal-Shar",
+"language":"Elven",
+"description":"Little is known of the isle of Erathal-Shar, the new homeland of the elves. Following the disastrous conclusion of the Great War, many elves advocated isolation, and in their white ships sailed for the distant shores of their new home. The elves of Erathal-Shar maintain this stance even today, and have no trade nor communication with the outside world. Visitors are not welcome, and ships are turned away, by force if necessary."
+},
+"deeprealms":{
+"name":"The Deeprealms",
+"language":"Undercommon",
+"description":"Though the creatures known as purple worms have never been particularly numerous, they have existed since the beginning. The tunnels they burrowed through solid rock were there to shelter the drow, the orcs, and the goblins when Dracos' curse fell upon them. This unimaginably vast network of tunnels and caverns runs below the surface of the world, home to creatures who cannot abide the light. Underground rivers, fungal forests, and even subterranean seas dot its length, as well as the hidden cities of fell races."
+},
+"molidius":{
+"name":"Molidius",
+"language":"Various",
+"description":"The world in which this game is set. Molidius has four major continents; Thelian, Ghalak, Erathal-Shar, and Arkarsa. It is circled by two moons, Elmore and Folio."
+}
+}

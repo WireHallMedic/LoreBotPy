@@ -14,6 +14,8 @@ historyDict = json.loads(open("history.json","r").read())
 standardsDict = json.loads(open("standards.json","r").read())
 timeDict = json.loads(open("time.json","r").read())
 
+notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
+
 client = discord.Client()
 
 @client.event
@@ -54,6 +56,9 @@ async def on_message(message):
       outStr = timeDict["time"]
    elif cmd == "standards":
       outStr = standardsDict["standards"]
+   elif re.search("lunar", cmd) != None:
+      outStr = notYetImplementedStr
+   
    
    #specific topics
    if outStr == None:

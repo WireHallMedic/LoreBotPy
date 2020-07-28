@@ -24,16 +24,34 @@ async def on_ready():
     
 @client.event
 async def on_message(message):
-   # don't respond to self, empty messages, or things that don't start with a bang
+   # don't respond to self or empty messages
    if message.author == client.user or \
-      len(message.content) == 0 or \
-      message.content[0] != "!":
+      len(message.content) == 0:
       return
    
-   # we've got a potential command, format it
+   # format input
    cmd = cleanMessage(message.content)
    cmdNoThe = cmd.replace("the ", "")
    outStr = None
+   authorName = re.sub("#.*", "", str(message.author))
+   
+   # chirps
+   for key in msgDict["chirp"]:
+      if re.search(key, cmd) != None:
+         outStr = msgDict["chirp"][key]
+         break
+   if re.search("what does lorebot think", cmd) != None:
+      if authorName == "wire_hall_medic":
+         outStr = msgDict["chirp"]["_lorebot_thinks_m"]
+      else:
+         outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
+   if outStr is not None:
+      outStr = outStr.replace("[NAME]", authorName)
+      outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
+   
+   # ignore messages that don't start with a bang
+   if outStr == None and message.content[0] != "!":
+      return
    
    # bot info and ToC
    if cmd == "lorebot":
@@ -77,26 +95,15 @@ async def on_message(message):
             outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"]) 
-   # chirps
-   if outStr == None:
-      for key in msgDict["chirp"]:
-         if re.search(key, cmd) != None:
-            outStr = msgDict["chirp"][key]
-            break
-   if re.search("what does lorebot think", cmd) != None:
-      if message.author == "wire_hall_medic":
-         outStr = msgDict["chirp"]["_lorebot_thinks_m"]
-      else:
-         outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
-   outStr = outStr.replace("[NAME]", message.author)
-   outStr = outStr.replace("[PERCENT]", roll(75))
    
    # print results
    if outStr != None:
       await message.channel.send(outStr)
 
 def cleanMessage(str):
-   newStr = str[1:]
+   newStr = str
+   if newStr[0] == "!":
+      newStr = newStr[1:]
    newStr = newStr.lower()
    newStr = newStr.strip()
    return newStr

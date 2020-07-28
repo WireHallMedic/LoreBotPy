@@ -1,5 +1,5 @@
 {
-"deities":"The Old Gods: Audra, Chylae, Emezes, Felja, Fetchi, Lergor, Mezal, Nox, Onusar, Reka, Sol\n\nThe Young Gods: Adaris, Alacas, Courocas, Epia, Frovan, Geos, Gericas, Iriz, Kitsan, Laex, Meral, Rarekor, Tusain, Zelia, Zyar\n\nThe Hero Gods: Alcott, Daiuz Hammerstrike, Kandala, Tranton, Tulai, Xenos\n\nRegional Gods: Ancestor Spirits, Animal Spirits, Po'mua, The Jade Emperor, The Prophet, Vorardruak\n\nDead Gods: Dracos",
+"deities":"**The Old Gods**: Audra, Chylae, Emezes, Felja, Fetchi, Lergor, Mezal, Nox, Onusar, Reka, Sol\n**The Young Gods**: Adaris, Alacas, Courocas, Epia, Frovan, Geos, Gericas, Iriz, Kitsan, Laex, Meral, Rarekor, Tusain, Zelia, Zyar\n**The Hero Gods**: Alcott, Daiuz Hammerstrike, Kandala, Tranton, Tulai, Xenos\n**Regional Gods**: Ancestor Spirits, Animal Spirits, Po'mua, The Jade Emperor, The Prophet, Vorardruak\n**Dead Gods**: Dracos",
 
 "audra":{
 "name":"Audra",
@@ -175,7 +175,7 @@
 "alignment":"Lawful Evil",
 "caste":"Young God",
 "symbol":"A black 'X'",
-"description":"The Patient One, Meral and his followers seek to avenge slights, regardless of nature.  He is the brother of Frovan, and they enjoy a close friendship.  Utterly unforgiving, Meral represents the dark side of Frovan's justice, and the corruption of his father Lergor’s rulership.  His symbol is a black 'X', which is often carved into his priest's victims.\n - Never forget a slight or loss, for those who have hurt you must suffer in kind.\n - The ends justify the means.\n - Treat the followers of Frovan as favored cousins."
+"description":"The Patient One, Meral and his followers seek to avenge slights, regardless of nature.  He is the brother of Frovan, and they enjoy a close friendship.  Utterly unforgiving, Meral represents the dark side of Frovan's justice, and the corruption of his father Lergor's rulership.  His symbol is a black 'X', which is often carved into his priest's victims.\n - Never forget a slight or loss, for those who have hurt you must suffer in kind.\n - The ends justify the means.\n - Treat the followers of Frovan as favored cousins."
 },
 "rarekor":{
 "name":"Rarekor",

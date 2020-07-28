@@ -30,6 +30,7 @@ async def on_message(message):
    
    # we've got a potential command, format it
    cmd = cleanMessage(message.content)
+   cmdNoThe = cmd.replace("the ", "")
    outStr = None
    
    # bot info and ToC
@@ -54,6 +55,24 @@ async def on_message(message):
    elif cmd == "standards":
       outStr = standardsDict["standards"]
    
+   #specific topics
+   if outStr == None:
+      for key in geoDict:
+         if key == cmd or key == cmdNoThe:
+            outStr = "**{}**\nLanguage: {}\n{}".format(geoDict[key]["name"], geoDict[key]["language"], geoDict[key]["description"])
+   
+   if outStr == None:
+      for key in historyDict:
+         if key == cmd or key == cmdNoThe:
+            outStr = historyDict[key]
+            
+   if outStr == None:
+      for key in deityDict:
+         if key == cmd or key == cmdNoThe:
+            outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
+               deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
+               deityDict[key]["symbol"], deityDict[key]["description"]) 
+            
    # print results
    if outStr != None:
       await message.channel.send(outStr)

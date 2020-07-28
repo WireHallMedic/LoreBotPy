@@ -17,7 +17,8 @@
 	}
 	,"chirp":
 	{
-		"poop":"Heh heh. You said 'poop'"
+		"poop":"Heh heh. You said 'poop.'"
+		," do do ":"Heh heh. You said 'doo doo.'"
 		,"doomed":"DOOOOMED!"
 		,"_lorebot_thinks_m":"Michael is 100% correct."
 		,"_lorebot_thinks_not_m":"You should go for it! The chance of a TPK is only [BAD_ODDS]%!"

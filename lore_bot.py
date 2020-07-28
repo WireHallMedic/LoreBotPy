@@ -77,7 +77,20 @@ async def on_message(message):
             outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"]) 
-            
+   # chirps
+   if outStr == None:
+      for key in msgDict["chirp"]:
+         if re.search(key, cmd) != None:
+            outStr = msgDict["chirp"][key]
+            break
+   if re.search("what does lorebot think", cmd) != None:
+      if message.author == "wire_hall_medic":
+         outStr = msgDict["chirp"]["_lorebot_thinks_m"]
+      else:
+         outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
+   outStr = outStr.replace("[NAME]", message.author)
+   outStr = outStr.replace("[PERCENT]", roll(75))
+   
    # print results
    if outStr != None:
       await message.channel.send(outStr)
@@ -87,6 +100,9 @@ def cleanMessage(str):
    newStr = newStr.lower()
    newStr = newStr.strip()
    return newStr
+
+def roll(val):
+   return random.randint(1, val)
 
 # fire this bad boy up
 client.run(token)

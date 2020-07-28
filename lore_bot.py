@@ -35,8 +35,11 @@ async def on_message(message):
    if outStr != None:
       await message.channel.send(outStr)
 
-def roll(val):
-   return random.randint(1, val)
+def cleanMessage(str):
+   newStr = str[1:]
+   newStr = newStr.lower()
+   newStr = newStr.strip()
+   return newStr
 
 # fire this bad boy up
 client.run(token)

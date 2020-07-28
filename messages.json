@@ -1,6 +1,6 @@
 {
 	"botInfo":"Hello, I'm LoreBot! I'm and interactive encyclopedia for the fantasy world of Molidius. I am case-insensitive.\n__Recognized Commands__:"
-	, "parsingFailure":"I feel like I should calculate '{}', but can't parse it. Sorry."
+	, "parsingFailure":"I was unable to parse '{}'. Bummer."
 	,"recognizedCommands":
 	{
 		"!Deities":" - List of deities"
@@ -12,10 +12,9 @@
 		,"!Hakim":" - Description of Hakim and Hakim's New and Previously Owned Magical Items"
 		,"!Hakim Prices":" - Prices for Hakim's"
 		,"!Time":" - Calendar and timekeeping" 
-		,"!Standards":" - The foundation of currency"
+		,"!Standards":" - Standard Weights and Measurements, the foundation of currency"
 		,"!Lunar [SEASON] [DAY] [YEAR]":" - Lunar phases for that day"
 	}
-	,"commandNotes":"*<> indicates an optional argument*"
 	,"chirp":
 	{
 		"poop":"Heh heh. You said 'poop'"

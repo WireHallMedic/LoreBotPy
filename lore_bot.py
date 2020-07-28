@@ -7,6 +7,12 @@ import random
 # let's load some things from files
 token = open("token.txt", "r").read()
 msgDict = json.loads(open("messages.json","r").read())
+deityDict = json.loads(open("deities.json","r").read())
+geoDict = json.loads(open("geography.json","r").read())
+hakimDict = json.loads(open("hakim.json","r").read())
+historyDict = json.loads(open("history.json","r").read())
+standardsDict = json.loads(open("standards.json","r").read())
+timeDict = json.loads(open("time.json","r").read())
 
 client = discord.Client()
 
@@ -32,6 +38,23 @@ async def on_message(message):
       for key in msgDict["recognizedCommands"]:
          outStr += "\n  " + key + " " + msgDict["recognizedCommands"][key]
    
+   # major topics
+   if cmd == "deities":
+      outStr = deityDict["deities"]
+   elif cmd == "geography":
+      outStr = geoDict["geography"]
+   elif cmd == "history":
+      outStr = historyDict["history"]
+   elif cmd == "hakim":
+      outStr = hakimDict["hakim"]
+   elif cmd == "hakim prices":
+      outStr = hakimDict["prices"]
+   elif cmd == "time":
+      outStr = timeDict["time"]
+   elif cmd == "standards":
+      outStr = standardsDict["standards"]
+   
+   # print results
    if outStr != None:
       await message.channel.send(outStr)
 

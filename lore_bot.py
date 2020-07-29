@@ -13,8 +13,16 @@ hakimDict = json.loads(open("hakim.json","r").read())
 historyDict = json.loads(open("history.json","r").read())
 standardsDict = json.loads(open("standards.json","r").read())
 timeDict = json.loads(open("time.json","r").read())
+profanityDict = json.loads(open("profanity.json","r").read())
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
+profanityChirp = []
+
+def loadState():
+   for key in profanityDict["responses"]:
+      profanityChirp.append(profanityDict["responses"][key])
+
+loadState()
 
 client = discord.Client()
 
@@ -45,6 +53,9 @@ async def on_message(message):
          outStr = msgDict["chirp"]["_lorebot_thinks_m"]
       else:
          outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
+   for key in profanityDict["naughty words"]:
+      if re.search(key, cmd) != None:
+         outStr = getProfanityResponse()
    if outStr is not None:
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
@@ -110,6 +121,9 @@ def cleanMessage(str):
 
 def roll(val):
    return random.randint(1, val)
+
+def getProfanityResponse():
+   return random.choice(profanityChirp)
 
 # fire this bad boy up
 client.run(token)

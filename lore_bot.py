@@ -2,6 +2,7 @@ import discord
 import json
 import re
 import random
+import time
 
 
 # let's load some things from files
@@ -17,12 +18,13 @@ profanityDict = json.loads(open("profanity.json","r").read())
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
+lastSwear = 0
 
-def loadState():
+def initBot():
    for key in profanityDict["responses"]:
       profanityChirp.append(profanityDict["responses"][key])
 
-loadState()
+initBot()
 
 client = discord.Client()
 
@@ -122,7 +124,13 @@ def cleanMessage(str):
 def roll(val):
    return random.randint(1, val)
 
+# only gives a chirp back every 10 seconds
 def getProfanityResponse():
+   global lastSwear
+   curTime = time.time()
+   if curTime <= lastSwear + 10:
+      return None
+   lastSwear = curTime
    return random.choice(profanityChirp)
 
 # fire this bad boy up

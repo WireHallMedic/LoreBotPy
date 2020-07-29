@@ -111,10 +111,10 @@ async def on_message(message):
                deityDict[key]["symbol"], deityDict[key]["description"]) 
    
    if outStr != None:
-      outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))
-      outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
-      outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
-      outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
+      outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))
+      outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
+      outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
+      outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
    
    # print results
    if outStr != None:

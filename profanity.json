@@ -1,0 +1,23 @@
+{
+	"responses":
+	{
+		"a":"My virgin bot ears!"
+		,"b":"Someone has a potty mouth . . ."
+		,"c":"Language, [NAME]!"
+		,"d":"[NAME] said a bad word . . ."
+		,"e":"That's not a very nice thing to say . . ."
+		,"f":"You kiss your mother with that mouth?"
+		,"g":"Science fiction level, world-wide, instant communications network, and you use it to say dirty words."
+	}
+	,"naughty words":
+	{
+
+		"fuck":""
+		,"shit":""
+		,"cunt":""
+		,"asshole":""
+		,"bitch":""
+		,"piss":""
+		,"cock":""
+	}
+}

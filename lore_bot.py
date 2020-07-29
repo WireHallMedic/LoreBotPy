@@ -15,6 +15,7 @@ historyDict = json.loads(open("history.json","r").read())
 standardsDict = json.loads(open("standards.json","r").read())
 timeDict = json.loads(open("time.json","r").read())
 profanityDict = json.loads(open("profanity.json","r").read())
+stateDict = json.loads(open("worldstate.json","r").read())
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
@@ -108,6 +109,12 @@ async def on_message(message):
             outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"]) 
+   
+   if outStr != None:
+      outStr.replace("[CUR_YEAR_NUM]", stateDict["current year number"])
+      outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
+      outStr.replace("[CUR_AGE_NUM]", stateDict["current age number"])
+      outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
    
    # print results
    if outStr != None:

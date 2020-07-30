@@ -19,12 +19,14 @@
 	{
 		"poop":"Heh heh. You said 'poop.'"
 		," do do ":"Heh heh. You said 'doo doo.'"
+		,"poop":"Heh heh. You said 'poop.'"
 		,"doomed":"DOOOOMED!"
 		,"_lorebot_thinks_m":"Michael is 100% correct."
 		,"_lorebot_thinks_not_m":"You should go for it! The chance of a TPK is only [BAD_ODDS]%!"
 		,"chances of":"Never tell me the odds, [NAME]."
 		,"odds of":"Never tell me the odds, [NAME]."
-		,"tits":"(.)(.)"
-		,"boobs":"(.)(.)"
+		,"tits":"( . )( . )"
+		,"boobs":"( . )( . )"
+		,"boobies":"( . )( . )"
 	}
 }

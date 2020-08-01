@@ -63,6 +63,12 @@ async def on_message(message):
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
+   if re.search("shut it", cmd) != None and re.search("lorebot", cmd) != None:
+      if authorName == "wire_hall_medic":
+         outStr = "Yessir."
+      else:
+         outStr = "Eat a bag of dicks, " + authorName
+   
    # ignore messages that don't start with a bang
    if outStr == None and message.content[0] != "!":
       return
@@ -114,12 +120,6 @@ async def on_message(message):
       outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
       outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
       outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
-   
-   if re.search("shut it", cmd) != None and re.search("lorebot", cmd) != None:
-      if authorName == "wire_hall_medic":
-         outStr = "Yessir."
-      else:
-         outStr = "Eat a bag of dicks, " + authorName
    
    # print results
    if outStr != None:

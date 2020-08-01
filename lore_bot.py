@@ -63,11 +63,11 @@ async def on_message(message):
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
-   if re.search("shut it", cmd) != None and re.search("lorebot", cmd) != None:
+   if re.search("^shut it.*lorebot", cmd) != None or re.search("^shut up.*lorebot", cmd) != None:
       if authorName == "wire_hall_medic":
          outStr = "Yessir."
       else:
-         outStr = "Eat a bag of dicks, " + authorName
+         outStr = "No thank you, " + authorName
    
    # ignore messages that don't start with a bang
    if outStr == None and message.content[0] != "!":

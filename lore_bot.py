@@ -91,7 +91,6 @@ async def on_message(message):
    elif re.search("lunar", cmd) != None:
       outStr = notYetImplementedStr
    
-   
    #specific topics
    if outStr == None:
       for key in geoDict:
@@ -115,6 +114,12 @@ async def on_message(message):
       outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
       outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
       outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
+   
+   if re.search("shut it", cmd) != None && re.search("lorebot", cmd) != None:
+      if authorName == "wire_hall_medic":
+         outStr = "Yessir."
+      else:
+         outStr = "Eat a bag of dicks, " + authorName
    
    # print results
    if outStr != None:

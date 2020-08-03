@@ -61,9 +61,6 @@ async def on_message(message):
          outStr = updateProfanityCount(authorName, re.search("fuck", cmd) != None)
          if outStr == None:
             outStr = getProfanityResponse()
-   if outStr is not None:
-      outStr = outStr.replace("[NAME]", authorName)
-      outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
    if re.search("^shut it.*lorebot", cmd) != None or re.search("^shut up.*lorebot", cmd) != None:
       if authorName == "wire_hall_medic":
@@ -125,6 +122,10 @@ async def on_message(message):
       outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
       outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
       outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
+   
+   if outStr is not None:
+      outStr = outStr.replace("[NAME]", authorName)
+      outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
    # print results
    if outStr != None:

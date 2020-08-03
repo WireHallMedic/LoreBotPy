@@ -122,8 +122,6 @@ async def on_message(message):
       outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
       outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
       outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
-   
-   if outStr is not None:
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    

@@ -61,8 +61,6 @@ async def on_message(message):
          outStr = updateProfanityCount(authorName, re.search("fuck", cmd) != None)
          if outStr == None:
             outStr = getProfanityResponse()
-   if re.search("swear count", cmd) != None:
-      outStr = getSwearCount(authorName)
    if outStr is not None:
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
@@ -107,6 +105,9 @@ async def on_message(message):
          if key == cmd or key == cmdNoThe:
             outStr = "**{}**\nLanguage: {}\n{}".format(geoDict[key]["name"], geoDict[key]["language"], geoDict[key]["description"])
    
+   if re.search("swear count", cmd) != None:
+      outStr = getSwearCount(authorName)
+      
    if outStr == None:
       for key in historyDict:
          if key == cmd or key == cmdNoThe:

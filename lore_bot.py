@@ -58,7 +58,7 @@ async def on_message(message):
          outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
    for key in profanityDict["naughty words"]:
       if re.search(key, cmd) != None:
-         outStr = updateProfanityCount(authorName, re.search("fuck", cmd) != None)
+         outStr = updateProfanityCount(authorName, key == "fuck", len(re.findall(key, cmd)))
          if outStr == None:
             outStr = getProfanityResponse()
    
@@ -129,6 +129,7 @@ async def on_message(message):
    if outStr != None:
       await message.channel.send(outStr)
 
+#strip message for processing
 def cleanMessage(str):
    newStr = str
    if newStr[0] == "!":
@@ -137,40 +138,43 @@ def cleanMessage(str):
    newStr = newStr.strip()
    return newStr
 
+# RNGesus
 def roll(val):
    return random.randint(1, val)
 
-# only gives a chirp back every 10 seconds
+# only gives a chirp back every 30 seconds
 def getProfanityResponse():
    global lastSwear
    curTime = time.time()
-   if curTime <= lastSwear + 10:
+   if curTime <= lastSwear + 30:
       return None
    lastSwear = curTime
    return random.choice(profanityChirp)
 
 # update profanity count
-def updateProfanityCount(author, isFuck):
+def updateProfanityCount(author, isFuck, swearcount):
    authorTotalStr = "{}_t".format(author)
    authorFBombStr = "{}_f".format(author)
-   if authorTotalStr in swearCountDict:
-      swearCountDict[authorTotalStr] = swearCountDict[authorTotalStr] + 1
-   else:
-      swearCountDict[authorTotalStr] = 1
-   if authorFBombStr not in swearCountDict:
-      swearCountDict[authorFBombStr] = 0
-   if isFuck:
-      swearCountDict[authorFBombStr] = swearCountDict[authorFBombStr] + 1
+   outStr = None
+   for i in range(swearcount):
+      if authorTotalStr in swearCountDict:
+         swearCountDict[authorTotalStr] = swearCountDict[authorTotalStr] + 1
+      else:
+         swearCountDict[authorTotalStr] = 1
+      if authorFBombStr not in swearCountDict:
+         swearCountDict[authorFBombStr] = 0
+      if isFuck:
+         swearCountDict[authorFBombStr] = swearCountDict[authorFBombStr] + 1
+      if swearCountDict[authorTotalStr] == 10:
+         outStr = ":trophy:Achievement Unlocked: Potty Mouth!\n[NAME] has sworn 10 times!\nEnter command '!swear count' to see your stats!"
+      if swearCountDict[authorTotalStr] == 100:
+         outStr = ":trophy:Achievement Unlocked: Advanced Potty Mouth!\n[NAME] has sworn 100 times!\nEnter command '!swear count' to see your stats!"
+      if swearCountDict[authorTotalStr] == 1000:
+         outStr = ":trophy:Achievement Unlocked: Master Potty Mouth!\n[NAME] has sworn 1000 times!\nEnter command '!swear count' to see your stats!"
    # save current state
    with open('swearcount.json', 'w') as json_file:
       json.dump(swearCountDict, json_file)
-   if swearCountDict[authorTotalStr] == 10:
-      return ":trophy:Achievement Unlocked: Potty Mouth!\n[NAME] has sworn 10 times!\nEnter command '!swear count' to see your stats!"
-   if swearCountDict[authorTotalStr] == 100:
-      return ":trophy:Achievement Unlocked: Advanced Potty Mouth!\n[NAME] has sworn 100 times!\nEnter command '!swear count' to see your stats!"
-   if swearCountDict[authorTotalStr] == 1000:
-      return ":trophy:Achievement Unlocked: Master Potty Mouth!\n[NAME] has sworn 1000 times!\nEnter command '!swear count' to see your stats!"
-   return None
+   return outStr
    
 def getSwearCount(author):
    authorTotalStr = "{}_t".format(author)

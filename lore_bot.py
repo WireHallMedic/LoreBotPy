@@ -7,6 +7,7 @@ import time
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
 lastSwear = 0
+chirpForSwearing = False
 
 # let's load some things from files
 token = open("token.txt", "r").read()
@@ -59,7 +60,7 @@ async def on_message(message):
    for key in profanityDict["naughty words"]:
       if re.search(key, cmd) != None:
          outStr = updateProfanityCount(authorName, key == "fuck", len(re.findall(key, cmd)))
-         if outStr == None:
+         if outStr == None and chirpForSwearing:
             outStr = getProfanityResponse()
    
    if re.search("^shut it.*lorebot", cmd) != None or re.search("^shut up.*lorebot", cmd) != None:

@@ -1,6 +1,7 @@
 {
 	"botInfo":"Hello, I'm LoreBot! I'm and interactive encyclopedia for the fantasy world of Molidius. I am case-insensitive.\n__Recognized Commands__:"
 	, "parsingFailure":"I was unable to parse '{}'. Bummer."
+	, "goodStatus":"LoreBot status: online"
 	,"recognizedCommands":
 	{
 		"!Deities":" - List of deities"

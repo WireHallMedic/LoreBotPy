@@ -78,6 +78,8 @@ async def on_message(message):
       outStr = msgDict["botInfo"]
       for key in msgDict["recognizedCommands"]:
          outStr += "\n  " + key + " " + msgDict["recognizedCommands"][key]
+   elif cmd == "status":
+      outStr = msgDict["goodStatus"]
    
    # major topics
    if cmd == "deities":

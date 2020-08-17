@@ -1,6 +1,7 @@
 {
 	"botInfo":"Hello, I'm LoreBot! I'm and interactive encyclopedia for the fantasy world of Molidius. I am case-insensitive.\n__Recognized Commands__:"
 	, "parsingFailure":"I was unable to parse '{}'. Bummer."
+	, "lunarParsingFailure":"I was unable to parse '{}'.\nPlease format in the style of <season> <day> <year>"
 	, "goodStatus":"LoreBot status: online"
 	,"recognizedCommands":
 	{

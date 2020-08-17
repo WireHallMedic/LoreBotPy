@@ -97,7 +97,7 @@ async def on_message(message):
    elif cmd == "standards":
       outStr = standardsDict["standards"]
    elif re.search("lunar", cmd) != None:
-      outStr = notYetImplementedStr
+      outStr = parseLunar(cmd)
    
    #specific topics
    if outStr == None:
@@ -186,6 +186,43 @@ def getSwearCount(author):
       return "Since I began counting, user [NAME] has sworn {} times, of which {} were f-bombs.".format( \
          swearCountDict[authorTotalStr], swearCountDict[authorFBombStr])
    return "I have no swearing on record for user [NAME]."
+
+def getPercentStr(cyclePos):
+   cyclePercent = int((cyclePos * 100) + .5)
+   if cyclePercent > 50:
+      cyclePercent = 50 - (cyclePercent - 50)
+   cyclePercent *= 2
+   return "{:d}%".format(cyclePercent)
+
+def getPhaseStr(dayNum, cycleLen):
+   cyclePos = (dayNum % cycleLen) / cycleLen
+   waxWane = "Waning"
+   if cyclePos < .5:
+      waxWane = "Waxing"
+   return "{} ({})".format(getPercentStr(cyclePos), waxWane)
+
+def calcLunar(day, year):
+   day += (year * 360)
+   return "Elmore: {}\nKaja: {}".format(getPhaseStr(day, 39), getPhaseStr(day, 27))
+
+def parseLunar(inStr):
+   strArr = inStr.split()
+   # we should have four: 'lunar', season, day, year
+   #try:
+   day = int(strArr[2])
+   if re.search("^sp", strArr[1]):
+      day += 0
+   elif re.search("^su", strArr[1]):
+      day += 90
+   elif re.search("^au", strArr[1]):
+      day += 180
+   elif re.search("^fa", strArr[1]):
+      day += 180
+   elif re.search("^wi", strArr[1]):
+      day += 270
+   return calcLunar(day, int(strArr[3]))
+   #except:
+   #   return msgDict["lunarParsingFailure"].format(inStr)
 
 # fire this bad boy up
 client.run(token)

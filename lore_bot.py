@@ -208,21 +208,21 @@ def calcLunar(day, year):
 def parseLunar(inStr):
    strArr = inStr.split()
    # we should have four: 'lunar', season, day, year
-   #try:
-   day = int(strArr[2])
-   if re.search("^sp", strArr[1]):
-      day += 0
-   elif re.search("^su", strArr[1]):
-      day += 90
-   elif re.search("^au", strArr[1]):
-      day += 180
-   elif re.search("^fa", strArr[1]):
-      day += 180
-   elif re.search("^wi", strArr[1]):
-      day += 270
-   return calcLunar(day, int(strArr[3]))
-   #except:
-   #   return msgDict["lunarParsingFailure"].format(inStr)
+   try:
+      day = int(strArr[2])
+      if re.search("^sp", strArr[1]):
+         day += 0
+      elif re.search("^su", strArr[1]):
+         day += 90
+      elif re.search("^au", strArr[1]):
+         day += 180
+      elif re.search("^fa", strArr[1]):
+         day += 180
+      elif re.search("^wi", strArr[1]):
+         day += 270
+      return calcLunar(day, int(strArr[3]))
+   except:
+      return msgDict["lunarParsingFailure"].format(inStr)
 
 # fire this bad boy up
 client.run(token)

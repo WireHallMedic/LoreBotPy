@@ -8,6 +8,7 @@ notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
 lastSwear = 0
 chirpForSwearing = False
+swearingCooldown = 0
 
 # let's load some things from files
 token = open("token.txt", "r").read()
@@ -149,7 +150,7 @@ def roll(val):
 def getProfanityResponse():
    global lastSwear
    curTime = time.time()
-   if curTime <= lastSwear + 30:
+   if curTime <= lastSwear + swearingCooldown:
       return None
    lastSwear = curTime
    return random.choice(profanityChirp)

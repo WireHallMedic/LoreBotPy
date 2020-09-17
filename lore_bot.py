@@ -3,7 +3,7 @@ import json
 import re
 import random
 import time
-import mock
+from mock import mockify
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
@@ -144,7 +144,7 @@ async def on_message(message):
    if authorName in mockList:
       if outStr == None:
          outStr = message.content
-      outStr = mock(outStr)
+      outStr = mockify(outStr)
    
    # print results
    if outStr != None:

@@ -118,7 +118,8 @@ async def on_message(message):
    
    if outStr == None:
       if re.search("^mock", cmd) != None:
-         addMock(cmd)
+         if authorName == "wire_hall_medic":
+            addMock(cmd)
    
    if outStr == None:
       if re.search("^unmock", cmd) != None:
@@ -242,7 +243,13 @@ def addMock(cmd):
    return "Now mocking user {}.".format(target)
 
 def rmMock(cmd):
-   pass
+   target = cmd.split(" ", 1)[2]
+   target = target.strip()
+   if target in mockList:
+      mockList.remove(target)
+      return "Ceasing mocking of user {}.".format(target)
+   else:
+      return "User {} not in list of users currently being mocked.".format(target)
 
 # fire this bad boy up
 client.run(token)

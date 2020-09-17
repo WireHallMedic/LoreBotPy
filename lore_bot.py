@@ -236,7 +236,10 @@ def parseLunar(inStr):
       return msgDict["lunarParsingFailure"].format(inStr)
 
 def addMock(cmd):
-   pass
+   target = cmd.split(" ", 1)[2]
+   target = target.strip()
+   mockList.append(target)
+   return "Now mocking user {}.".format(target)
 
 def rmMock(cmd):
    pass

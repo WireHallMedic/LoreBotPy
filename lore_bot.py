@@ -120,6 +120,8 @@ async def on_message(message):
       if re.search("^!mock", message.content) != None:
          if authorName == "wire_hall_medic" or authorName == "SJ":
             outStr = addMock(message.content)
+         else:
+            outStr = "Nah."
    
    if outStr == None:
       if re.search("^!unmock", message.content) != None:

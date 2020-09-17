@@ -119,11 +119,11 @@ async def on_message(message):
    if outStr == None:
       if re.search("^mock", cmd) != None:
          if authorName == "wire_hall_medic":
-            addMock(cmd)
+            outStr = addMock(cmd)
    
    if outStr == None:
       if re.search("^unmock", cmd) != None:
-         rmMock(cmd)
+         outStr = rmMock(cmd)
    
    if outStr == None:
       for key in deityDict:
@@ -243,13 +243,13 @@ def parseLunar(inStr):
       return msgDict["lunarParsingFailure"].format(inStr)
 
 def addMock(cmd):
-   target = cmd.split(" ", 1)[2]
+   target = cmd.replace("mock", "")
    target = target.strip()
    mockList.append(target)
    return "Now mocking user {}.".format(target)
 
 def rmMock(cmd):
-   target = cmd.split(" ", 1)[2]
+   target = cmd.replace("unmock", "")
    target = target.strip()
    if target in mockList:
       mockList.remove(target)

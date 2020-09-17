@@ -3,9 +3,11 @@ import json
 import re
 import random
 import time
+import mock
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
+mockList = []
 lastSwear = 0
 chirpForSwearing = False
 swearingCooldown = 0
@@ -113,7 +115,15 @@ async def on_message(message):
       for key in historyDict:
          if key == cmd or key == cmdNoThe:
             outStr = historyDict[key]
-            
+   
+   if outStr == None:
+      if re.search("^mock", cmd) != None:
+         addMock(cmd)
+   
+   if outStr == None:
+      if re.search("^unmock", cmd) != None:
+         rmMock(cmd)
+   
    if outStr == None:
       for key in deityDict:
          if key == cmd or key == cmdNoThe:
@@ -224,6 +234,12 @@ def parseLunar(inStr):
       return calcLunar(day, int(strArr[3]))
    except:
       return msgDict["lunarParsingFailure"].format(inStr)
+
+def addMock(cmd):
+   pass
+
+def rmMock(cmd):
+   pass
 
 # fire this bad boy up
 client.run(token)

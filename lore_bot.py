@@ -72,8 +72,8 @@ async def on_message(message):
       else:
          outStr = "No thank you, " + authorName
    
-   # ignore messages that don't start with a bang
-   if outStr == None and message.content[0] != "!":
+   # ignore messages that don't start with a bang, unless mocking
+   if outStr == None and message.content[0] != "!" and authorName not in mockList:
       return
    
    # bot info and ToC

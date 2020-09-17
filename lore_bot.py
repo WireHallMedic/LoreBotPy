@@ -140,6 +140,12 @@ async def on_message(message):
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
+   # mock, if applicapable
+   if authorName in mockList:
+      if outStr == None:
+         outStr = message.content
+      outStr = mock(outStr)
+   
    # print results
    if outStr != None:
       await message.channel.send(outStr)

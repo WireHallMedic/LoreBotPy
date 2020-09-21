@@ -11,13 +11,13 @@ def mockify(sourceStr):
       toggle = not toggle
    return outStr
 
-def addMock(cmd):
+def addMock(cmd, mockList):
    target = cmd.replace("!mock", "")
    targetLower = target.strip().lower()
    mockList.append(targetLower)
    return "Now mocking user {}.".format(target)
 
-def rmMock(cmd):
+def rmMock(cmd, mockList):
    target = cmd.replace("!unmock", "")
    targetLower = target.strip().lower()
    if targetLower in mockList:

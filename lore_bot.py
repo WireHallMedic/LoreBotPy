@@ -119,13 +119,13 @@ async def on_message(message):
    if outStr == None:
       if re.search("^!mock", message.content) != None:
          if authorName == "wire_hall_medic" or authorName == "SJ":
-            outStr = addMock(message.content)
+            outStr = addMock(message.content, mockList)
          else:
-            outStr = "Nah."ojar
+            outStr = "Nah."
    
    if outStr == None:
       if re.search("^!unmock", message.content) != None:
-         outStr = rmMock(message.content)
+         outStr = rmMock(message.content, mockList)
    
    if outStr == None:
       for key in deityDict:

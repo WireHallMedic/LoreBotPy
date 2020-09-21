@@ -3,7 +3,7 @@ import json
 import re
 import random
 import time
-from mock import mockify
+from mock import mockify, addMock, rmMock
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
@@ -243,21 +243,6 @@ def parseLunar(inStr):
       return calcLunar(day, int(strArr[3]))
    except:
       return msgDict["lunarParsingFailure"].format(inStr)
-
-def addMock(cmd):
-   target = cmd.replace("!mock", "")
-   targetLower = target.strip().lower()
-   mockList.append(targetLower)
-   return "Now mocking user {}.".format(target)
-
-def rmMock(cmd):
-   target = cmd.replace("!unmock", "")
-   targetLower = target.strip().lower()
-   if targetLower in mockList:
-      mockList.remove(targetLower)
-      return "Ceasing mocking of user {}.".format(target)
-   else:
-      return "User {} not in list of users currently being mocked.".format(target)
 
 # fire this bad boy up
 client.run(token)

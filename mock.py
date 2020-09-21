@@ -11,6 +11,21 @@ def mockify(sourceStr):
       toggle = not toggle
    return outStr
 
+def addMock(cmd):
+   target = cmd.replace("!mock", "")
+   targetLower = target.strip().lower()
+   mockList.append(targetLower)
+   return "Now mocking user {}.".format(target)
+
+def rmMock(cmd):
+   target = cmd.replace("!unmock", "")
+   targetLower = target.strip().lower()
+   if targetLower in mockList:
+      mockList.remove(targetLower)
+      return "Ceasing mocking of user {}.".format(target)
+   else:
+      return "User {} not in list of users currently being mocked.".format(target)
+
 if __name__ == "__main__":
    str = "The wizard quickly jinxed the gnomes before they vaporized."
    print(mockify(str))

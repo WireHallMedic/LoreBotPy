@@ -73,7 +73,7 @@ async def on_message(message):
          outStr = "No thank you, " + authorName
    
    # ignore messages that don't start with a bang, unless mocking
-   if outStr == None and message.content[0] != "!" and authorName not in mockList:
+   if outStr == None and message.content[0] != "!" and authorName.lower() not in mockList:
       return
    
    # bot info and ToC
@@ -121,7 +121,7 @@ async def on_message(message):
          if authorName == "wire_hall_medic" or authorName == "SJ":
             outStr = addMock(message.content)
          else:
-            outStr = "Nah."
+            outStr = "Nah."ojar
    
    if outStr == None:
       if re.search("^!unmock", message.content) != None:
@@ -143,7 +143,7 @@ async def on_message(message):
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
    # mock, if applicapable
-   if authorName in mockList:
+   if authorName.lower() in mockList:
       if outStr == None:
          outStr = message.content
       outStr = mockify(outStr)
@@ -246,15 +246,15 @@ def parseLunar(inStr):
 
 def addMock(cmd):
    target = cmd.replace("!mock", "")
-   target = target.strip()
-   mockList.append(target)
+   targetLower = target.strip().lower()
+   mockList.append(targetLower)
    return "Now mocking user {}.".format(target)
 
 def rmMock(cmd):
    target = cmd.replace("!unmock", "")
-   target = target.strip()
-   if target in mockList:
-      mockList.remove(target)
+   targetLower = target.strip().lower()
+   if targetLower in mockList:
+      mockList.remove(targetLower)
       return "Ceasing mocking of user {}.".format(target)
    else:
       return "User {} not in list of users currently being mocked.".format(target)

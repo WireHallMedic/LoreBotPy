@@ -21,6 +21,7 @@ hakimDict = json.loads(open("hakim.json","r").read())
 historyDict = json.loads(open("history.json","r").read())
 standardsDict = json.loads(open("standards.json","r").read())
 timeDict = json.loads(open("time.json","r").read())
+langDict = json.loads(open("language.json","r").read())
 profanityDict = json.loads(open("profanity.json","r").read())
 stateDict = json.loads(open("worldstate.json","r").read())
 swearCountDict = json.loads(open("swearcount.json","r").read())
@@ -164,6 +165,27 @@ def cleanMessage(str):
 # RNGesus
 def roll(val):
    return random.randint(1, val)
+
+# list languages
+def getLangStr():
+   length = 0
+   str = ""
+   for element in langDict:
+      length = max(length, len(element.name) + 3
+   for element in langDict:
+      str += getLangLine(element)
+   return str
+
+# get language line
+def getLangLine(element, desiredLen):
+   str = element["name"]
+   for i in Range(0, len(element["name"]), desiredLen):
+      str += " "
+   str += element[spoken_by]
+   if element["notes"].equals("") == False:
+      str += " (" + element["notes"] + ")"
+   str += "\n"
+   return str
 
 # only gives a chirp back every 30 seconds
 def getProfanityResponse():

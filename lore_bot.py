@@ -173,7 +173,7 @@ def getLangStr():
    length = 0
    str = ""
    for element in langDict:
-      length = max(length, len(element.name) + 3)
+      length = max(length, len(element["name"]) + 3)
    for element in langDict:
       str += getLangLine(element)
    return str

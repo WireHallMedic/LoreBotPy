@@ -1,6 +1,5 @@
 {
-	"heading",
-	{
+	"heading":{
 		"name":"Name"
 		,"spoken_by":"Spoken By"
 		,"notes":""

@@ -176,15 +176,15 @@ def getLangStr():
       length = max(length, len(langDict[key]["name"]) + 3)
    for key in langDict:
       str += getLangLine(key, length)
-   return str
+   return "```" + str + "```"
 
 # get language line
 def getLangLine(key, desiredLen):
    str = langDict[key]["name"]
-   for i in Range(0, len(langDict[key]["name"]), desiredLen):
+   for i in range(len(langDict[key]["name"]), desiredLen):
       str += " "
-   str += langDict[key][spoken_by]
-   if langDict[key]["notes"].equals("") == False:
+   str += langDict[key]["spoken_by"]
+   if langDict[key]["notes"] != "":
       str += " (" + langDict[key]["notes"] + ")"
    str += "\n"
    return str

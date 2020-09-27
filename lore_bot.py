@@ -21,7 +21,7 @@ hakimDict = json.loads(open("hakim.json","r").read())
 historyDict = json.loads(open("history.json","r").read())
 standardsDict = json.loads(open("standards.json","r").read())
 timeDict = json.loads(open("time.json","r").read())
-langDict = json.loads(open("language.json","r").read())
+langDict = json.loads(open("languages.json","r").read())
 profanityDict = json.loads(open("profanity.json","r").read())
 stateDict = json.loads(open("worldstate.json","r").read())
 swearCountDict = json.loads(open("swearcount.json","r").read())
@@ -100,6 +100,8 @@ async def on_message(message):
       outStr = timeDict["time"]
    elif cmd == "standards":
       outStr = standardsDict["standards"]
+   elif cmd == "languages":
+      outStr = getLangStr()
    elif re.search("lunar", cmd) != None:
       outStr = parseLunar(cmd)
    
@@ -171,7 +173,7 @@ def getLangStr():
    length = 0
    str = ""
    for element in langDict:
-      length = max(length, len(element.name) + 3
+      length = max(length, len(element.name) + 3)
    for element in langDict:
       str += getLangLine(element)
    return str

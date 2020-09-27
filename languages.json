@@ -5,132 +5,132 @@
 		,"spoken_by":"Spoken By"
 		,"notes":""
 	}
-	,{
+	,"Abyssal":{
 		"name":"Abyssal"
 		,"spoken_by":"Demons and other chaotic evil outsiders"
 		,"notes":""
 	}
-	,{
+	,"Aklo":{
 		"name":"Aklo"
 		,"spoken_by":"Derro, inhuman or otherworldly monsters, evil fey"
 		,"notes":""
 	}
-	,{
+	,"Aquan":{
 		"name":"Aquan"
 		,"spoken_by":"Aquatic creatures, elemental water creatres"
 		,"notes":""
 	}
-	,{
+	,"Auran":{
 		"name":"Auran"
 		,"spoken_by":"Flying creatures, elemental air creatures"
 		,"notes":""
 	}
-	,{
+	,"Badis":{
 		"name":"Badis"
 		,"spoken_by":"People of Al-Badia"
 		,"notes":"Regional"
 	}
-	,{
+	,"Beast-Tongue":{
 		"name":"Beast-Tongue"
 		,"spoken_by":"Beastmen"
 		,"notes":""
 	}
-	,{
+	,"Celestial":{
 		"name":"Celestial"
 		,"spoken_by":"Angels and other good-aligned outsiders"
 		,"notes":""
 	}
-	,{
+	,"Centennian":{
 		"name":"Centennian"
 		,"spoken_by":"People of the Hundred Kingdoms"
 		,"notes":"Regional, Centennian dialect"
 	}
-	,{
+	,"Common":{
 		"name":"Common"
 		,"spoken_by":"Common trade language, largely based on dwarven"
 		,"notes":"Dwarven dialect"
 	}
-	,{
+	,"Dorialan":{
 		"name":"Dorialan"
 		,"spoken_by":"People of Doriala, the Asdoli Mountains, and the Poa Steppes"
 		,"notes":"Regional"
 	}
-	,{
+	,"Draconic":{
 		"name":"Draconic"
 		,"spoken_by":"Dragons, reptillian humanoids, and arcane creatures."
 		,"notes":""
 	}
-	,{
+	,"Druidic":{
 		"name":"Druidic"
 		,"spoken_by":"Druids"
 		,"notes":"Secret language"
 	}
-	,{
-		"name":"Dwarven"
+	,"Druidic":{
+		"name":"Druidic"
 		,"spoken_by":"Dwarves, gnomes"
 		,"notes":"Dwarven dialect"
 	}
-	,{
+	,"Ecollian":{
 		"name":"Ecollian"
 		,"spoken_by":"People of the Ecoll Highlands, Ibori Coast"
 		,"notes":"Regional, no written form"
 	}
-	,{
+	,"Elven":{
 		"name":"Elven"
 		,"spoken_by":"Elves, half-elves."
 		,"notes":""
 	}
-	,{
+	,"Ghalakar":{
 		"name":"Ghalakar"
 		,"spoken_by":"People of Ghalak"
 		,"notes":"Regional"
 	}
-	,{
+	,"Giant":{
 		"name":"Giant"
 		,"spoken_by":"Giants, cyclopses, ettins, ogres, trolls"
 		,"notes":""
 	}
-	,{
+	,"Goblin":{
 		"name":"Goblin"
 		,"spoken_by":"Goblins, hobgoblins, bugbears"
 		,"notes":"Nightspeak dialect"
 	}
-	,{
+	,"Gnoll":{
 		"name":"Gnoll"
 		,"spoken_by":"Gnolls"
 		,"notes":"Nightspeak dialect"
 	}
-	,{
+	,"Ignan":{
 		"name":"Ignan"
 		,"spoken_by":"Creatures of elemental fire"
 		,"notes":""
 	}
-	,{
+	,"Infernal":{
 		"name":"Infernal"
 		,"spoken_by":"Devils and other lawful evil outsiders"
 		,"notes":""
 	}
-	,{
+	,"Orc":{
 		"name":"Orc"
 		,"spoken_by":"Orcs, half-orcs"
 		,"notes":"Nightspeak dialect"
 	}
-	,{
+	,"Sylvan":{
 		"name":"Sylvan"
 		,"spoken_by":"Centaurs, fey cretures, plant creatures, unicorns"
 		,"notes":""
 	}
-	,{
+	,"Terran":{
 		"name":"Terran"
 		,"spoken_by":"Creatures of elemental earth"
 		,"notes":""
 	}
-	,{
+	,"Undercommon":{
 		"name":"Undercommon"
 		,"spoken_by":"Drow, duergar, morlocks, svirfbeblin"
 		,"notes":""
 	}
-	,{
+	,"Vesgi":{
 		"name":"Vesgi"
 		,"spoken_by":"People of Vesgalth"
 		,"notes":"Regional, Centennian dialect"

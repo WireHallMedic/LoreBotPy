@@ -172,20 +172,20 @@ def roll(val):
 def getLangStr():
    length = 0
    str = ""
-   for element in langDict:
-      length = max(length, len(element["name"]) + 3)
-   for element in langDict:
-      str += getLangLine(element)
+   for key in langDict:
+      length = max(length, len(langDict[key]["name"]) + 3)
+   for key in langDict:
+      str += getLangLine(key)
    return str
 
 # get language line
-def getLangLine(element, desiredLen):
-   str = element["name"]
-   for i in Range(0, len(element["name"]), desiredLen):
+def getLangLine(key, desiredLen):
+   str = langDict[key]["name"]
+   for i in Range(0, len(langDict[key]["name"]), desiredLen):
       str += " "
-   str += element[spoken_by]
-   if element["notes"].equals("") == False:
-      str += " (" + element["notes"] + ")"
+   str += langDict[key][spoken_by]
+   if langDict[key]["notes"].equals("") == False:
+      str += " (" + langDict[key]["notes"] + ")"
    str += "\n"
    return str
 

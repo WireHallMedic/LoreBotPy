@@ -175,7 +175,7 @@ def getLangStr():
    for key in langDict:
       length = max(length, len(langDict[key]["name"]) + 3)
    for key in langDict:
-      str += getLangLine(key)
+      str += getLangLine(key, length)
    return str
 
 # get language line

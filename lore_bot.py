@@ -156,7 +156,7 @@ async def on_message(message):
    
    # print results
    if outFile != None:
-      await message.channel.send(message.channel, outFile)
+      await message.channel.send(file=outFile)
    if outStr != None:
       await message.channel.send(outStr)
 

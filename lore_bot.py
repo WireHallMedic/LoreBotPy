@@ -49,6 +49,7 @@ async def on_message(message):
    cmd = cleanMessage(message.content)
    cmdNoThe = cmd.replace("the ", "")
    outStr = None
+   outFile = None
    authorName = re.sub("#.*", "", str(message.author))
    
    # chirps
@@ -152,6 +153,8 @@ async def on_message(message):
       outStr = mockify(outStr)
    
    # print results
+   if outFile != None:
+      await message.channel.send(message.channel, outFile)
    if outStr != None:
       await message.channel.send(outStr)
 
@@ -267,6 +270,10 @@ def parseLunar(inStr):
       return calcLunar(day, int(strArr[3]))
    except:
       return msgDict["lunarParsingFailure"].format(inStr)
+
+def get_world_map():
+   with open('world_map.png', 'rb') as f:
+      return discord.File(f)
 
 # fire this bad boy up
 client.run(token)

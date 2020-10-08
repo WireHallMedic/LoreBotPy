@@ -103,6 +103,8 @@ async def on_message(message):
       outStr = standardsDict["standards"]
    elif cmd == "languages":
       outStr = getLangStr()
+   elif cmd == "map":
+      outFile = getWorldMap()
    elif re.search("lunar", cmd) != None:
       outStr = parseLunar(cmd)
    
@@ -271,7 +273,7 @@ def parseLunar(inStr):
    except:
       return msgDict["lunarParsingFailure"].format(inStr)
 
-def get_world_map():
+def getWorldMap():
    with open('world_map.png', 'rb') as f:
       return discord.File(f)
 

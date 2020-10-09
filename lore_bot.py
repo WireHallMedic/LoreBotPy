@@ -11,6 +11,7 @@ mockList = []
 lastSwear = 0
 chirpForSwearing = False
 swearingCooldown = 0
+mapFileName = 'world_map.jpg';
 
 # let's load some things from files
 token = open("token.txt", "r").read()
@@ -104,7 +105,7 @@ async def on_message(message):
    elif cmd == "languages":
       outStr = getLangStr()
    elif cmd == "map":
-      outFile = getWorldMap()
+      outFile = getImageFromFile(mapFileName)
    elif re.search("lunar", cmd) != None:
       outStr = parseLunar(cmd)
    
@@ -273,8 +274,8 @@ def parseLunar(inStr):
    except:
       return msgDict["lunarParsingFailure"].format(inStr)
 
-def getWorldMap():
-   with open('world_map.png', 'rb') as f:
+def getImageFromFile(fileName):
+   with open(fileName, 'rb') as f:
       return discord.File(f)
 
 # fire this bad boy up

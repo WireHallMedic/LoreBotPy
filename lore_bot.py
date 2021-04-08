@@ -11,7 +11,7 @@ mockList = []
 lastSwear = 0
 chirpForSwearing = False
 swearingCooldown = 0
-mapFileName = 'world_map.jpg';
+mapFileName = './images/world_map.jpg';
 
 # let's load some things from files
 token = open("token.txt", "r").read()
@@ -145,13 +145,12 @@ async def on_message(message):
    # this is a lazy implementation. It should read ./images, check if there's a matching file, and then post it 
    # if there is one
    if outStr == None:
-      imageFile = ""
       if cmd == "dick pic" or cmd == "dickpic":
-         imageFile = "dick_pic.png" # this is a picture of Dick Van Dyke. Have some class.
+         outFile = getImageFromFile("./images/dick_pic.jpg") # this is a picture of Dick Van Dyke. Have some class.
       if cmd == "get off my lawn" or cmd == "getoffmylawn":
-         imageFile = "get_off_my_lawn.png"
+         outFile = getImageFromFile("./images/get_off_my_lawn.jpg"
       if cmd == "gift":
-         imageFile = "gift.png"
+         outFile = getImageFromFile("./images/gift.jpg"
       if imageFile != "":
          with open(imageFile, 'rb') as f:
             picture = discord.File(f)

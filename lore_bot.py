@@ -151,11 +151,6 @@ async def on_message(message):
          outFile = getImageFromFile("./images/get_off_my_lawn.jpg")
       if cmd == "gift":
          outFile = getImageFromFile("./images/gift.jpg")
-      if imageFile != "":
-         with open(imageFile, 'rb') as f:
-            picture = discord.File(f)
-            await channel.send(file=picture)
-            return
    
    if outStr != None:
       outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))

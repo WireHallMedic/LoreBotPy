@@ -146,13 +146,13 @@ async def on_message(message):
    # if there is one
    if outStr == None:
       imageFile = ""
-      if outStr == "dick pic" || outStr == "dickpic":
+      if outStr == "dick pic" or outStr == "dickpic":
          imageFile = "dick_pic.png" # this is a picture of Dick Van Dyke. Have some class.
-      if outStr == "get off my lawn" || outStr == "getoffmylawn":
+      if outStr == "get off my lawn" or outStr == "getoffmylawn":
          imageFile = "get_off_my_lawn.png"
       if outStr == "gift":
          imageFile = "gift.png"
-      if imageFile != ""
+      if imageFile != "":
          with open("./images/" + imageFile, 'rb') as f:
             picture = discord.File(f)
             await channel.send(file=picture)

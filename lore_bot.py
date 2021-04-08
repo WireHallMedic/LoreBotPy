@@ -146,11 +146,11 @@ async def on_message(message):
    # if there is one
    if outStr == None:
       imageFile = ""
-      if outStr == "dick pic" or outStr == "dickpic":
+      if cmd == "dick pic" or cmd == "dickpic":
          imageFile = "dick_pic.png" # this is a picture of Dick Van Dyke. Have some class.
-      if outStr == "get off my lawn" or outStr == "getoffmylawn":
+      if cmd == "get off my lawn" or cmd == "getoffmylawn":
          imageFile = "get_off_my_lawn.png"
-      if outStr == "gift":
+      if cmd == "gift":
          imageFile = "gift.png"
       if imageFile != "":
          with open("./images/" + imageFile, 'rb') as f:

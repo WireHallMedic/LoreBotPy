@@ -148,9 +148,9 @@ async def on_message(message):
       if cmd == "dick pic" or cmd == "dickpic":
          outFile = getImageFromFile("./images/dick_pic.jpg") # this is a picture of Dick Van Dyke. Have some class.
       if cmd == "get off my lawn" or cmd == "getoffmylawn":
-         outFile = getImageFromFile("./images/get_off_my_lawn.jpg"
+         outFile = getImageFromFile("./images/get_off_my_lawn.jpg")
       if cmd == "gift":
-         outFile = getImageFromFile("./images/gift.jpg"
+         outFile = getImageFromFile("./images/gift.jpg")
       if imageFile != "":
          with open(imageFile, 'rb') as f:
             picture = discord.File(f)

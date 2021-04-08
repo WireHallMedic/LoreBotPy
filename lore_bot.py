@@ -139,7 +139,24 @@ async def on_message(message):
          if key == cmd or key == cmdNoThe:
             outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
-               deityDict[key]["symbol"], deityDict[key]["description"]) 
+               deityDict[key]["symbol"], deityDict[key]["description"])
+   
+   # post image
+   # this is a lazy implementation. It should read ./images, check if there's a matching file, and then post it 
+   # if there is one
+   if outStr == None:
+      imageFile = ""
+      if outStr == "dick pic" || outStr == "dickpic":
+         imageFile = "dick_pic.png" # this is a picture of Dick Van Dyke. Have some class.
+      if outStr == "get off my lawn" || outStr == "getoffmylawn":
+         imageFile = "get_off_my_lawn.png"
+      if outStr == "gift":
+         imageFile = "gift.png"
+      if imageFile != ""
+         with open("./images/" + imageFile, 'rb') as f:
+            picture = discord.File(f)
+            await channel.send(file=picture)
+            return
    
    if outStr != None:
       outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))

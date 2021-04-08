@@ -153,7 +153,7 @@ async def on_message(message):
       if cmd == "gift":
          imageFile = "gift.png"
       if imageFile != "":
-         with open("images/" + imageFile, 'rb') as f:
+         with open(imageFile, 'rb') as f:
             picture = discord.File(f)
             await channel.send(file=picture)
             return

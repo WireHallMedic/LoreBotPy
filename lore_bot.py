@@ -52,6 +52,7 @@ async def on_message(message):
    outStr = None
    outFile = None
    authorName = re.sub("#.*", "", str(message.author))
+   authorID = str(message.author.id)
    
    # chirps
    for key in msgDict["chirp"]:

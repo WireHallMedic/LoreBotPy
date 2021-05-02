@@ -66,7 +66,7 @@ async def on_message(message):
          outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
    for key in profanityDict["naughty words"]:
       if re.search(key, cmd) != None:
-         outStr = updateProfanityCount(authorName, key == "fuck", len(re.findall(key, cmd)))
+         outStr = updateProfanityCount(authorName, authorID, key == "fuck", len(re.findall(key, cmd)))
          if outStr == None and chirpForSwearing:
             outStr = getProfanityResponse()
    
@@ -217,9 +217,9 @@ def getProfanityResponse():
    return random.choice(profanityChirp)
 
 # update profanity count
-def updateProfanityCount(author, isFuck, swearcount):
-   authorTotalStr = "{}_t".format(author)
-   authorFBombStr = "{}_f".format(author)
+def updateProfanityCount(authorName, authorID, isFuck, swearcount):
+   authorTotalStr = "{}_t".format(authorName)
+   authorFBombStr = "{}_f".format(authorName)
    outStr = None
    for i in range(swearcount):
       if authorTotalStr in swearCountDict:
@@ -228,6 +228,8 @@ def updateProfanityCount(author, isFuck, swearcount):
          swearCountDict[authorTotalStr] = 1
       if authorFBombStr not in swearCountDict:
          swearCountDict[authorFBombStr] = 0
+      # current user name
+      swearCountDict[authorID] = authorName
       if isFuck:
          swearCountDict[authorFBombStr] = swearCountDict[authorFBombStr] + 1
       if swearCountDict[authorTotalStr] == 10:

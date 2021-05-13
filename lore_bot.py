@@ -143,6 +143,13 @@ async def on_message(message):
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"])
    
+   
+   # list images
+   if cmd == "images" or cmd == "list images":
+      fileList = os.listdir("./images/")
+      for el in fileList:
+         outStr = "{}{}\n".format(outstr, el)
+   
    # post image
    # this is a lazy implementation. It should read ./images, check if there's a matching file, and then post it 
    # if there is one

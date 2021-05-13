@@ -3,6 +3,7 @@ import json
 import re
 import random
 import time
+import os
 from mock import mockify, addMock, rmMock
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"

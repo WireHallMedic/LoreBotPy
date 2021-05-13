@@ -18,6 +18,11 @@
 		,"!Languages":" - List languages of Molidius"
 		,"!Map":" - Display a map of Molidius"
 		,"!Lunar [SEASON] [DAY] [YEAR]":" - Lunar phases for that day"
+		,"- Non-Lore Commands -":""
+		,"!Images":" - List of saved images"
+		,"!Swear Count":" - Show your profanity stats"
+		,"!Mock [username]":" - Start mocking the specified user"
+		,"!Unmock [username]":" - Stop mocking the specified user"
 	}
 	,"chirp":
 	{

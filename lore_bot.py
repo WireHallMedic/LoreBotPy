@@ -311,7 +311,7 @@ def getIPAddress():
    except:
       addr[0] = "Unable to get hostname"
    try:
-      addr[1] = socket.gethostbyname(addr[0])
+      addr[1] = socket.gethostbyname(addr[0] + ".local")
    except:
       addr[1] = "Unable to get IP address"
    return addr

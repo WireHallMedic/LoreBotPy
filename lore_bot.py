@@ -4,6 +4,7 @@ import re
 import random
 import time
 import os
+import socket
 from mock import mockify, addMock, rmMock
 
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
@@ -88,6 +89,8 @@ async def on_message(message):
          outStr += "\n  " + key + " " + msgDict["recognizedCommands"][key]
    elif cmd == "status":
       outStr = msgDict["goodStatus"]
+      addr = getIPAddress()
+      outStr = "{}\nHostname: {}\nIP Address: {}".format(outStr, addr[0], addr[1]);
    
    # major topics
    if cmd == "deities":
@@ -299,6 +302,20 @@ def parseLunar(inStr):
 def getImageFromFile(fileName):
    with open(fileName, 'rb') as f:
       return discord.File(f)
+
+def getIPAddress():
+   vals = ["", ""]
+   addr = ["Unable to get hostname", "Unable to get IP"]
+   try:
+      addr[0] = socket.gethostname()
+   except:
+      addr[0] = "Unable to get hostname"
+   try:
+      addr[1] = socket.gethostbyname(addr[0])
+   except:
+      addr[1] = "Unable to get IP address"
+   return addr
+
 
 # fire this bad boy up
 client.run(token)

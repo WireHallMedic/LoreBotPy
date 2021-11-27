@@ -90,7 +90,7 @@ async def on_message(message):
    # bots, but by default this will kill running bots.
    if cmd == "restart":
       if authorName == adminName:
-         os.system("shutdown /s /t 0")
+         os.system("shutdown /r /t 1")
    
    # bot info and ToC
    if cmd == "lorebot":

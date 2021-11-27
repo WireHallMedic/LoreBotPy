@@ -1,9 +1,9 @@
 import discord
 import json
+import os
 import re
 import random
 import time
-import os
 import socket
 from mock import mockify, addMock, rmMock
 

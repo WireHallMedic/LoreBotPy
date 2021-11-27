@@ -17,6 +17,7 @@ lastSwear = 0
 chirpForSwearing = False
 swearingCooldown = 0
 mapFileName = './images/world_map.jpg';
+adminName = "wire_hall_medic"
 
 # let's load some things from files
 token = open("token.txt", "r").read()
@@ -65,7 +66,7 @@ async def on_message(message):
          outStr = msgDict["chirp"][key]
          break
    if re.search("what does lorebot think", cmd) != None:
-      if authorName == "wire_hall_medic":
+      if authorName == adminName:
          outStr = msgDict["chirp"]["_lorebot_thinks_m"]
       else:
          outStr = msgDict["chirp"]["_lorebot_thinks_not_m"]
@@ -76,7 +77,7 @@ async def on_message(message):
             outStr = getProfanityResponse()
    
    if re.search("^shut it.*lorebot", cmd) != None or re.search("^shut up.*lorebot", cmd) != None:
-      if authorName == "wire_hall_medic":
+      if authorName == adminName:
          outStr = "Yessir."
       else:
          outStr = "No thank you, " + authorName
@@ -84,6 +85,12 @@ async def on_message(message):
    # ignore messages that don't start with a bang, unless mocking
    if outStr == None and message.content[0] != "!" and authorName.lower() not in mockList:
       return
+   
+   # restart the server computer. Mine uses a shell script to automatically launch
+   # bots, but by default this will kill running bots.
+   if cmd == "restart":
+      if authorName == adminName:
+         os.system("shutdown /s /t 0")
    
    # bot info and ToC
    if cmd == "lorebot":
@@ -133,7 +140,7 @@ async def on_message(message):
    
    if outStr == None:
       if re.search("^!mock", message.content) != None:
-         if authorName == "wire_hall_medic" or authorName == "SJ":
+         if authorName == adminName or authorName == "SJ":
             outStr = addMock(message.content, mockList)
          else:
             outStr = "Nah."

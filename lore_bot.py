@@ -86,12 +86,6 @@ async def on_message(message):
    if outStr == None and message.content[0] != "!" and authorName.lower() not in mockList:
       return
    
-   # restart the server computer. Mine uses a shell script to automatically launch
-   # bots, but by default this will kill running bots.
-   if cmd == "restart":
-      if authorName == adminName:
-         os.system("shutdown /r /t 1")
-   
    # bot info and ToC
    if cmd == "lorebot":
       outStr = msgDict["botInfo"]

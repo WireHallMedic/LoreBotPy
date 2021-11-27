@@ -7,6 +7,9 @@ import os
 import socket
 from mock import mockify, addMock, rmMock
 
+# change cwd in case this is called from shell script
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 notYetImplementedStr = ":warning: This feature is not yet implemented :warning:"
 profanityChirp = []
 mockList = []

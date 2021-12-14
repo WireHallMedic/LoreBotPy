@@ -76,6 +76,7 @@ async def on_message(message):
          if outStr == None and chirpForSwearing:
             outStr = getProfanityResponse()
    
+   # Polite responses for admin, otherwise decline when told to shut up
    if re.search("^shut it.*lorebot", cmd) != None or re.search("^shut up.*lorebot", cmd) != None:
       if authorName == adminName:
          outStr = "Yessir."
@@ -118,31 +119,24 @@ async def on_message(message):
    elif re.search("lunar", cmd) != None:
       outStr = parseLunar(cmd)
    
-   #specific topics
+   # specific topics
+   # geography
    if outStr == None:
       for key in geoDict:
          if key == cmd or key == cmdNoThe:
             outStr = "**{}**\nLanguage: {}\n{}".format(geoDict[key]["name"], geoDict[key]["language"], geoDict[key]["description"])
    
+   # swear count query
    if re.search("swear count", cmd) != None:
       outStr = getSwearCount(authorName)
-      
+   
+   # history 
    if outStr == None:
       for key in historyDict:
          if key == cmd or key == cmdNoThe:
             outStr = historyDict[key]
    
-   if outStr == None:
-      if re.search("^!mock", message.content) != None:
-         if authorName == adminName or authorName == "SJ":
-            outStr = addMock(message.content, mockList)
-         else:
-            outStr = "Nah."
-   
-   if outStr == None:
-      if re.search("^!unmock", message.content) != None:
-         outStr = rmMock(message.content, mockList)
-   
+   # check for deity query
    if outStr == None:
       for key in deityDict:
          if key == cmd or key == cmdNoThe:
@@ -150,6 +144,15 @@ async def on_message(message):
                deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"])
    
+   # if no output and mocking user, mock
+   if outStr == None:
+      if re.search("^!mock", message.content) != None:
+         addMock(message.content, mockList)
+   
+   # stop mocking user on request
+   if outStr == None:
+      if re.search("^!unmock", message.content) != None:
+         outStr = rmMock(message.content, mockList)
    
    # list images
    if cmd == "images" or cmd == "list images":
@@ -168,6 +171,7 @@ async def on_message(message):
       if cmd == "gift":
          outFile = getImageFromFile("./images/gift.jpg")
    
+   # format macros from strings
    if outStr != None:
       outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))
       outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
@@ -222,7 +226,7 @@ def getLangLine(key, desiredLen):
    str += "\n"
    return str
 
-# only gives a chirp back every 30 seconds
+# only gives a chirp back every X seconds, otherwise it gets annoying
 def getProfanityResponse():
    global lastSwear
    curTime = time.time()

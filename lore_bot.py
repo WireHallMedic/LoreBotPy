@@ -202,8 +202,7 @@ async def on_message(message):
    
    # resetting server
    if cmd == "reset" and authorName == adminName:
-      os.system("reboot now")
-      os.system(systemPassword)
+      os.system('echo %s|sudo -S %s' % (systemPassword, "sudo shutdown -r now"))
 
 #strip message for processing
 def cleanMessage(str):

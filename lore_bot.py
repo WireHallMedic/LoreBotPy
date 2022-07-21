@@ -32,6 +32,7 @@ langDict = json.loads(open("languages.json","r").read())
 profanityDict = json.loads(open("profanity.json","r").read())
 stateDict = json.loads(open("worldstate.json","r").read())
 swearCountDict = json.loads(open("swearcount.json","r").read())
+systemPassword = open("password.txt", "r").read()
 
 def initBot():
    for key in profanityDict["responses"]:
@@ -82,6 +83,13 @@ async def on_message(message):
          outStr = "Yessir."
       else:
          outStr = "No thank you, " + authorName
+   
+   # messaging for reseting server
+   if cmd == "reset":
+      if authorName == adminName:
+         outStr = "Resetting server."
+      else:
+         outStr = "Insufficent permissions, " + authorName + "."
    
    # ignore messages that don't start with a bang, unless mocking
    if outStr == None and message.content[0] != "!" and authorName.lower() not in mockList:
@@ -191,6 +199,11 @@ async def on_message(message):
       await message.channel.send(file=outFile)
    if outStr != None:
       await message.channel.send(outStr)
+   
+   # resetting server
+   if cmd == "reset" and authorName == adminName:
+      os.system("shutdown -r now")
+      os.system(systemPassword)
 
 #strip message for processing
 def cleanMessage(str):

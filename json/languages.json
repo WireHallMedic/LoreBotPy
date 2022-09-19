@@ -64,8 +64,8 @@
 		,"spoken_by":"Druids"
 		,"notes":"Secret language"
 	}
-	,"Dwarven":{
-		"name":"Dwarven"
+	,"Druidic":{
+		"name":"Druidic"
 		,"spoken_by":"Dwarves, gnomes"
 		,"notes":"Dwarven dialect"
 	}

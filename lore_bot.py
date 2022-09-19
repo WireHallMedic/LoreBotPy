@@ -21,17 +21,17 @@ adminName = "wire_hall_medic"
 
 # let's load some things from files
 token = open("token.txt", "r").read()
-msgDict = json.loads(open("json/messages.json","r").read())
-deityDict = json.loads(open("json/deities.json","r").read())
-geoDict = json.loads(open("json/geography.json","r").read())
-hakimDict = json.loads(open("json/hakim.json","r").read())
-historyDict = json.loads(open("json/history.json","r").read())
-standardsDict = json.loads(open("json/standards.json","r").read())
-timeDict = json.loads(open("json/time.json","r").read())
-langDict = json.loads(open("json/languages.json","r").read())
-profanityDict = json.loads(open("json/profanity.json","r").read())
-stateDict = json.loads(open("json/worldstate.json","r").read())
-swearCountDict = json.loads(open("json/swearcount.json","r").read())
+msgDict = json.loads(open("messages.json","r").read())
+deityDict = json.loads(open("deities.json","r").read())
+geoDict = json.loads(open("geography.json","r").read())
+hakimDict = json.loads(open("hakim.json","r").read())
+historyDict = json.loads(open("history.json","r").read())
+standardsDict = json.loads(open("standards.json","r").read())
+timeDict = json.loads(open("time.json","r").read())
+langDict = json.loads(open("languages.json","r").read())
+profanityDict = json.loads(open("profanity.json","r").read())
+stateDict = json.loads(open("worldstate.json","r").read())
+swearCountDict = json.loads(open("swearcount.json","r").read())
 systemPassword = open("password.txt", "r").read()
 
 def initBot():
@@ -270,7 +270,7 @@ def updateProfanityCount(authorName, authorID, isFuck, swearcount):
       if swearCountDict[authorTotalStr] == 1000:
          outStr = ":trophy:Achievement Unlocked: Master Potty Mouth!\n[NAME] has sworn 1000 times!\nEnter command '!swear count' to see your stats!"
    # save current state
-   with open('json/swearcount.json', 'w') as json_file:
+   with open('swearcount.json', 'w') as json_file:
       json.dump(swearCountDict, json_file)
    return outStr
    

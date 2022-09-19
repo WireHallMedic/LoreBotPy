@@ -16,7 +16,7 @@ mockList = []
 lastSwear = 0
 chirpForSwearing = False
 swearingCooldown = 0
-mapFileName = './images/world_map.jpg';
+mapFileName = './images/world_map.jpg'
 adminName = "wire_hall_medic"
 
 # let's load some things from files

@@ -41,8 +41,7 @@ def initBot():
 initBot()
 
 intents = discord.Intents.default()
-intents.message_content = True
-
+intents.messages = True
 client = discord.Client(intents=intents)
 
 @client.event

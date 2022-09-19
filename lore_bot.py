@@ -32,7 +32,7 @@ langDict = json.loads(open("json/languages.json","r").read())
 profanityDict = json.loads(open("json/profanity.json","r").read())
 stateDict = json.loads(open("json/worldstate.json","r").read())
 swearCountDict = json.loads(open("json/swearcount.json","r").read())
-systemPassword = open("password.txt", "r").read()
+systemPassword = open("password.txt", "r").read())
 
 def initBot():
    for key in profanityDict["responses"]:

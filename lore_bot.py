@@ -32,7 +32,7 @@ langDict = json.loads(open("json/languages.json","r").read())
 profanityDict = json.loads(open("json/profanity.json","r").read())
 stateDict = json.loads(open("json/worldstate.json","r").read())
 swearCountDict = json.loads(open("json/swearcount.json","r").read())
-systemPassword = open("password.txt", "r").read())
+systemPassword = open("password.txt", "r").read()
 
 def initBot():
    for key in profanityDict["responses"]:
@@ -44,7 +44,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord')
+    print('{} has connected to Discord'.format(client.user))
     
 @client.event
 async def on_message(message):

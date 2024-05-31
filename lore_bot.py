@@ -340,4 +340,4 @@ def getIPAddress():
 
 
 # fire this bad boy up
-client.run(token)
+client.run(token, reconnect=True)

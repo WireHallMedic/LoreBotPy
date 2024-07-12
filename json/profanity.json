@@ -1,7 +1,7 @@
 {
 	"responses":
 	{
-		"a":"My virgin bot ears!"
+		 "a":"My virgin bot ears!"
 		,"b":"Someone has a potty mouth . . ."
 		,"c":"Language, [NAME]!"
 		,"d":"[NAME] said a bad word . . ."
@@ -12,7 +12,7 @@
 	}
 	,"naughty words":
 	{
-		"fuck":""
+		 "fuck":""
 		,"shit":""
 		,"cunt":""
 		,"asshole":""

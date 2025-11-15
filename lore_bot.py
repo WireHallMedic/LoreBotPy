@@ -87,7 +87,7 @@ async def on_message(message):
          outStr = "No thank you, " + authorName
    
    # messaging for reseting server
-   if cmd == "reset":
+   if cmd == "reset" or cmd == "restart":
       if authorName == adminName:
          outStr = "Resetting server."
       else:

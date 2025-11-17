@@ -24,13 +24,8 @@ token = open("token.txt", "r").read()
 msgDict = json.loads(open("json/messages.json","r").read())
 deityDict = json.loads(open("json/deities.json","r").read())
 geoDict = json.loads(open("json/geography.json","r").read())
-hakimDict = json.loads(open("json/hakim.json","r").read())
-historyDict = json.loads(open("json/history.json","r").read())
-standardsDict = json.loads(open("json/standards.json","r").read())
-timeDict = json.loads(open("json/time.json","r").read())
 langDict = json.loads(open("json/languages.json","r").read())
 profanityDict = json.loads(open("json/profanity.json","r").read())
-stateDict = json.loads(open("json/worldstate.json","r").read())
 swearCountDict = json.loads(open("json/swearcount.json","r").read())
 systemPassword = open("password.txt", "r").read()
 
@@ -42,6 +37,7 @@ initBot()
 
 intents = discord.Intents.default()
 intents.messages = True
+intents.message_content = True
 client = discord.Client(intents=intents)
 
 @client.event
@@ -114,20 +110,10 @@ async def on_message(message):
       outStr = geoDict["geography"]
    elif cmd == "history":
       outStr = historyDict["history"]
-   elif cmd == "hakim":
-      outStr = hakimDict["hakim"]
-   elif cmd == "hakim prices":
-      outStr = hakimDict["prices"]
-   elif cmd == "time":
-      outStr = timeDict["time"]
-   elif cmd == "standards":
-      outStr = standardsDict["standards"]
    elif cmd == "languages":
       outStr = getLangStr()
    elif cmd == "map":
       outFile = getImageFromFile(mapFileName)
-   elif re.search("lunar", cmd) != None:
-      outStr = parseLunar(cmd)
    
    # specific topics
    # geography
@@ -150,9 +136,7 @@ async def on_message(message):
    if outStr == None:
       for key in deityDict:
          if key == cmd or key == cmdNoThe:
-            outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
-               deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
-               deityDict[key]["symbol"], deityDict[key]["description"])
+            outStr = deityDict[key]
    
    # if no output and mocking user, mock
    if outStr == None:
@@ -183,10 +167,6 @@ async def on_message(message):
    
    # format macros from strings
    if outStr != None:
-      outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))
-      outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
-      outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
-      outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
@@ -203,7 +183,7 @@ async def on_message(message):
       await message.channel.send(outStr)
    
    # resetting server
-   if cmd == "reset" and authorName == adminName:
+   if (cmd == "reset" or cmd == "restart") and authorName == adminName:
       os.system('echo %s|sudo -S %s' % (systemPassword, "sudo shutdown -r now"))
 
 #strip message for processing
@@ -290,36 +270,6 @@ def getPercentStr(cyclePos):
       cyclePercent = 50 - (cyclePercent - 50)
    cyclePercent *= 2
    return "{:d}%".format(cyclePercent)
-
-def getPhaseStr(dayNum, cycleLen):
-   cyclePos = (dayNum % cycleLen) / cycleLen
-   waxWane = "Waning"
-   if cyclePos < .5:
-      waxWane = "Waxing"
-   return "{} ({})".format(getPercentStr(cyclePos), waxWane)
-
-def calcLunar(day, year):
-   day += (year * 360)
-   return "Elmore: {}\nKaja: {}".format(getPhaseStr(day, 39), getPhaseStr(day, 27))
-
-def parseLunar(inStr):
-   strArr = inStr.split()
-   # we should have four: 'lunar', season, day, year
-   try:
-      day = int(strArr[2])
-      if re.search("^sp", strArr[1]):
-         day += 0
-      elif re.search("^su", strArr[1]):
-         day += 90
-      elif re.search("^au", strArr[1]):
-         day += 180
-      elif re.search("^fa", strArr[1]):
-         day += 180
-      elif re.search("^wi", strArr[1]):
-         day += 270
-      return calcLunar(day, int(strArr[3]))
-   except:
-      return msgDict["lunarParsingFailure"].format(inStr)
 
 def getImageFromFile(fileName):
    with open(fileName, 'rb') as f:

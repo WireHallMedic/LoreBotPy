@@ -109,7 +109,6 @@ async def on_message(message):
       outStr = deityDict["deities"]
    elif cmd == "geography":
       outStr = geoDict["geography"]
-      outStr = notYetImplementedStr
    elif cmd == "history":
       outStr = historyDict["history"]
       outStr = notYetImplementedStr

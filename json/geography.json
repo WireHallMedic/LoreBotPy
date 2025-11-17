@@ -1,54 +1,69 @@
 {
-"geography":"**The World**: Amaraith\n**Regions**: Arkodia, Barich Mountains Ethaedia, Iniris, Mynidia, Nybia, Soryn, The Black Isles, Vindra",
+"geography":"**The World**: Amaraith\n**Regions**: Arkodia, Barich Mountains, Black Isles, Central Sea, Cratian Sea, Ethaedia, Great Northern Wastes, Iniris, Mynidia, Nybia, Soryn Wastelands, Vindra",
 
 "amaraith":{
 "name":"Amaraith",
 "language":"Varies",
-"description":"The world in which this game takes place."
+"description":"The world in which this game takes place. Much of the knowledge of the wider world was lost in the Cataclysm; civilization clings on around the Central Sea."
 },
 "arkodia":{
 "name":"Arkodia",
 "language":"Common",
-"description":"[TODO]"
+"description":"North of the Barich mountains lie the grey and grim lands of the barbarians. Tribes of horselords roam its bleak plains, and fur-clad hunters stalk its dark and dangerous forests. These cold, rocky lands are also home to many giants and orcs, making it a dangerous place to journey."
 },
 "barich mountains":{
-"name":"Barich Mountains",
+"name":"The Barich Mountains",
 "language":"Dwarvish",
-"description":"[TODO]"
+"description":"These steep, snow-capped mountains cut across the continent, largely protecting the area of the Central Sea from savage people ofArkodia and the terrible creatures of the Soryn Wastelands. The ancestral home of the dwarves, they are criss-crossed with tunnels and mighty holds, though only a few have been reclaimed since the Cataclysm."
 },
 "black isles":{
 "name":"The Black Isles",
 "language":"Common",
-"description":"[TODO]"
+"description":"These jagged, inhospitable islands in the middle of the Central Sea are the last remnants of Tol-Bardor, the ancestral home of the elves. Now a lawless region home to numerous pirate bases and camps in its many hidden coves and bays, the only large settlement is the city of Blackport. Ruled by a council of Pirate Lords, only the most desperate or foolhardy would travel there intentionally."
+},
+"central sea":{
+"name":"The Central Sea",
+"language":"Common",
+"description":"A great, warm sea, the Central Sea provides for travel between Ethaedia, Mynidia, Iniris, and the Black Isles. Though the dangers of weather, pirates, slavers, and monsters makes seafaring far from safe, the Central Sea has helped Mynidia secure its place as the center of trade."
+},
+"cratian sea":{
+"name":"The Cratian Sea",
+"language":"Merran",
+"description":"This ancient body of water is home to fiercely territorial empires of merfolk, sahuagin, and the restless dead. With aquatic predators and ghost ships bound to their will, the Cratian Sea is much more dangerous than its northern sister, the Central Sea."
 },
 "ethaedia":{
 "name":"Ethaedia",
 "language":"Common",
-"description":"[TODO]"
+"description":"A staunchly religious nation, Ethaedia adheres rigidly to the worship of Suriel the Lawbringer. Within most of the city-states that make up the region, worship of any other deity is prohibited. While the various city-states claim to be autonomous, in reality the Ethaedian Church is the highest authority, as enforced by its templars and inquisitors."
+},
+"great northern wastes":{
+"name":"The Great Northern Wastes",
+"language":"Giant",
+"description":"Even further north than Arkodia like the Great Northern Wastes; wind-blasted tundra so inhospitably cold and empty that few creatures can live here. Home to frost giants, mammoths, and winter wolves, only those deeply acclimated to cold find any comfort in this land."
 },
 "iniris":{
 "name":"Iniris",
-"language":"Elvish, Common, Orcish",
-"description":"[TODO]"
+"language":"Elvish, Common, Orcish, Goblin",
+"description":"A hot, wet region to the southeast of Mynidia, for most of history Iniris was home to numerous tribes of primitive jungle tribes, orcs, and goblinoids. Great stone ziggurats, reclaimed by the nature, attest to the great civilization that must have once lived here, now fallen back into savagery. However, with the destruction of Tol-Bador, many elves have fled here, forming their own settlements, constantly at odds with those who dwelt here for millennia."
 },
 "mynidia":{
 "name":"Mynidia",
 "language":"Common",
-"description":"[TODO]"
+"description":"The jewel of the Central Sea, Mynidia is blessed with fertile soil, abundant natural resources, and a central trade location. The independent city-states of the Mynidians have a tendency to plot and scheme against each other, but thus far when one grows too strong, the others censure it economically to maintain the balance of power. Mynidia is also one of the most cosmopolitan regions, at least in the larger city-states. The scars of the Cataclysm run deep, however, and many dangers lurk in the abundant wild places between settlements, and with resources come those who would take them by force."
 },
 "nybia":{
 "name":"Nybia",
 "language":"Retilian",
-"description":"[TODO]"
+"description":"Cursed Nybia, the domain of the crocodile-men and their fell god Sek, lies to the south of the Central Sea. Mostly a collection of vast deserts, the mighty Uphraet River and its tributaries once brought prosperity and rich soil with their annual flooding. The cunning and avaricious crocodile-men build their stone settlements along these waterways, as they plot the enslavement and devouring of the other sentient races. The tribes of non-crocodile-men who live in this region do so well away from these dangerous places, as desert nomads, not staying in any one place long enough for the minions of Sek to take arms against them."
 },
 "soryn wastelands":{
 "name":"The Soryn Wastelands",
 "language":"Common",
-"description":"[TODO]"
+"description":"While these rolling grasslands and scattered forests at first look like a fine place for settlers, those who make this mistake soon realize the error of their ways. The Soryn Wastelands are so named because of the huge, aggressive underground predators that dominate this land. All attempts to colonize the region have ended with ruined structures on disturbed soil, and alarmingly few corpses. There are a population of seafarers living on the large Lake Soryn, as neither the purple worms, nor the bulettes, in constant competition with each other, can swim. The great Barich Mountains keep these massive predators from spreading outside this region."
 },
 "vindra":{
 "name":"",
 "language":"Common",
-"description":"[TODO]"
+"description":"Once the home of the beastmen, their conscription as a race by Brk’ka left this land open for expansion by the races left behind. Though the heat, monsoons, and abundant predators make life here difficult, many spices and textiles cannot be found anywhere else. While trade with the Vindri is difficult, it is lucrative enough that many are willing to take the risks."
 }
 }

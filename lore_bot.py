@@ -4,6 +4,7 @@ from discord.ext.commands import Bot
 import json
 import os
 import re
+import sys
 import random
 import time
 import socket
@@ -42,12 +43,16 @@ intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
 client = Bot(command_prefix = "!", intents = intents, case_insensitive = True)
-#client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord')
-    
+   print(f'{client.user} has connected to Discord')
+
+# handle bad unrecognized command names
+@client.event
+async def on_command_error(ctx, error):
+   print("Bad command for {}: {}".format(os.path.basename(__file__), str(error)), file = sys.stderr)
+   
 @client.event
 async def on_message(message):
    # don't respond to self or empty messages

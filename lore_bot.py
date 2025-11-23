@@ -1,4 +1,6 @@
 import discord
+import discord.ext
+from discord.ext.commands import Bot
 import json
 import os
 import re
@@ -38,8 +40,9 @@ initBot()
 
 intents = discord.Intents.default()
 intents.messages = True
-#intents.message_content = True
-client = discord.Client(intents=intents)
+intents.message_content = True
+client = Bot(command_prefix = "!", intents = intents, case_insensitive = True)
+#client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():

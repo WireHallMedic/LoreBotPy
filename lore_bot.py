@@ -52,7 +52,8 @@ async def on_ready():
 @client.event
 async def on_command_error(ctx, error):
    print("Bad command for {}: {}".format(os.path.basename(__file__), str(error)), file = sys.stderr)
-   
+
+# handle messages
 @client.event
 async def on_message(message):
    # don't respond to self or empty messages

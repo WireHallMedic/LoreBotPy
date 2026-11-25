@@ -152,8 +152,8 @@ async def on_message(message):
    if outStr == None:
       for key in deityDict:
          if key == cmd or key == cmdNoThe:
-            outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
-               deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
+            outStr = "**{}**\nPortfolio: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
+               deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["caste"], \
                deityDict[key]["symbol"], deityDict[key]["description"])
    
    # if no output and mocking user, mock

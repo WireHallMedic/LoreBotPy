@@ -28,8 +28,11 @@ msgDict = json.loads(open("json/messages.json","r").read())
 deityDict = json.loads(open("json/deities.json","r").read())
 geoDict = json.loads(open("json/geography.json","r").read())
 historyDict = json.loads(open("json/history.json","r").read())
+standardsDict = json.loads(open("json/standards.json","r").read())
+timeDict = json.loads(open("json/time.json","r").read())
 langDict = json.loads(open("json/languages.json","r").read())
 profanityDict = json.loads(open("json/profanity.json","r").read())
+stateDict = json.loads(open("json/worldstate.json","r").read())                                       
 swearCountDict = json.loads(open("json/swearcount.json","r").read())
 systemPassword = open("password.txt", "r").read()
 
@@ -120,13 +123,14 @@ async def on_message(message):
       outStr = geoDict["geography"]
    elif cmd == "history":
       outStr = historyDict["history"]
-      outStr = notYetImplementedStr
+   elif cmd == "time":
+      outStr = timeDict["time"]
+   elif cmd == "standards":
+      outStr = standardsDict["standards"]
    elif cmd == "languages":
       outStr = getLangStr()
-      outStr = notYetImplementedStr
    elif cmd == "map":
       outFile = getImageFromFile(mapFileName)
-   
    # specific topics
    # geography
    if outStr == None:
@@ -148,7 +152,9 @@ async def on_message(message):
    if outStr == None:
       for key in deityDict:
          if key == cmd or key == cmdNoThe:
-            outStr = deityDict[key]
+            outStr = "**{}**\nPortfolio: {}\nAlignment: {}\nCaste: {}\nSymbol: {}\nDescription: {}".format( \
+               deityDict[key]["name"], deityDict[key]["portfolio"], deityDict[key]["alignment"], deityDict[key]["caste"], \
+               deityDict[key]["symbol"], deityDict[key]["description"])
    
    # if no output and mocking user, mock
    if outStr == None:
@@ -179,6 +185,10 @@ async def on_message(message):
    
    # format macros from strings
    if outStr != None:
+      outStr = outStr.replace("[CUR_YEAR_NUM]", str(stateDict["current year number"]))
+      outStr = outStr.replace("[CUR_YEAR_WORDS]", stateDict["current year words"])
+      outStr = outStr.replace("[CUR_AGE_NUM]", str(stateDict["current age number"]))
+      outStr = outStr.replace("[CUR_AGE_WORDS]", stateDict["current age words"])
       outStr = outStr.replace("[NAME]", authorName)
       outStr = outStr.replace("[BAD_ODDS]", str(roll(50) + 50))
    
